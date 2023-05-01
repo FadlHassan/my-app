@@ -1,0 +1,17 @@
+.articleCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 26px 16px 16px;
+    gap: 10px;
+    background: #2F2D4F;
+    border-radius: 10px;
+}
+
+.titleDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
