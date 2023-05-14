@@ -8,6 +8,18 @@
     background: #2F2D4F;
     border-radius: 10px;
     max-width: 479px;
+    max-height: 361px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imageContainer img {
+    max-height: 199px;
+    width: auto;
 }
 
 .titleDescription {
