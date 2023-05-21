@@ -1,0 +1,90 @@
+.contactView {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px 0px;
+    background: var(--blue);
+    height: 100vh;
+    gap: 125px;
+    overflow-y: scroll;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leftContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.emailContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.emailHeader {
+    color: #FFFFFF;
+    -webkit-text-stroke: 1px black;
+    -moz-text-stroke: 1px black;
+}
+
+.emailDesc {
+    color: #FFFFFF;
+}
+
+.linkContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.iconList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 53px;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 74px 34px;
+    background: #2F2D4F;
+    border-radius: 10px;
+    max-width: 479px;
+    max-height: 361px;
+}
+
+.newsletterContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+}
+
+.newsletterDesc {
+    color: #FFFFFF;
+}
+
+.input {
+    background: #D9D9D9;
+    border-radius: 20px;
+    max-width: 649px;
+    width: 100%;
+    height: 77px;
+}

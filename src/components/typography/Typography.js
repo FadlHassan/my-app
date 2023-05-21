@@ -8,6 +8,8 @@ function getComponent(variant) {
     case TypographyVariants.HEADING_L:
     case TypographyVariants.HEADING_M:
     case TypographyVariants.HEADING_S:
+    case TypographyVariants.CONTACT_HEADER:
+    case TypographyVariants.EMAIL:
       return variant;
     default:
       return 'p';

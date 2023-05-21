@@ -18,7 +18,9 @@ function HeaderBar() {
           </NavLink>
         </li>
         <li>
-          <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>Contact</Typography>
+          <NavLink to="/contact">
+            <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>Contact</Typography>
+          </NavLink>
         </li>
         <li>
           <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>About</Typography>
