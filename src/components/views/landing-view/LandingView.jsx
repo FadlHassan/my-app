@@ -6,7 +6,7 @@ import styles from './landingView.module.css';
 import myImage from '../../../images/landing-page-girl.png';
 
 const LandingView = () => {
-    const title = 'Welcome,my name is Fadl Hassan';
+    const title = 'Welcome, my name is Fadl Hassan';
 
     return (
         <div className={styles.landingView}>

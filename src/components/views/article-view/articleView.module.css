@@ -1,0 +1,37 @@
+.articleView {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px 0px;
+    background: var(--blue);
+    height: 100vh;
+    gap: 125px;
+    overflow-y: scroll;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imageContainer img{
+    max-height: 480px;
+    width: auto;
+}
+
+.titleColor {
+    color: #E4FDE1;
+}
+
+.articleDescription {
+    color: #E4FDE1;
+    text-align: left;
+}
