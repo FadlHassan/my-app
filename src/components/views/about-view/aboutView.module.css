@@ -7,3 +7,20 @@
     gap: 125px;
     overflow-y: scroll;
 }
+
+.aboutInfo {
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    flex: 1;
+}
+
+.aboutInfo content {
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.aboutInfo img {
+    max-width: 741px;
+    max-height: 637px;
+}
