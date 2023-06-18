@@ -5,7 +5,8 @@ const TypographyVariants = {
     HEADING_S: "h4",
     CONTACT_HEADER: "header",
     EMAIL: "email",
-    DESCRIPTION: "description"
+    DESCRIPTION: "description",
+    CONTENT: "content"
 };
 
 export default TypographyVariants;
