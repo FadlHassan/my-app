@@ -6,6 +6,15 @@
     gap: 32px;
 }
 
+.navLink {
+    display: block;
+    border-bottom: 3px solid transparent;
+}
+
+.navLink:hover {
+    border-bottom: 3px solid var(--white);
+}
+
 .color {
     color: var(--white);
 }
