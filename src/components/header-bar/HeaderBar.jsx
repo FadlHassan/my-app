@@ -23,7 +23,9 @@ function HeaderBar() {
           </NavLink>
         </li>
         <li>
+        <NavLink to="/about">
           <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>About</Typography>
+        </NavLink>
         </li>
     </ul>
     );
