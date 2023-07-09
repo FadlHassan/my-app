@@ -34,9 +34,9 @@
     cursor: pointer;
     margin: 15px 7px 0px;
 
-    background-color: #ffffff;
+    background-color: var(--tertiary);
 }
   
 .slideshowDot.active {
-    background-color: #0f2ec8;
+    background-color: var(--secondary);
 }

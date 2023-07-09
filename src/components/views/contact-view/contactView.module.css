@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 40px 80px 0px;
-    background: var(--blue);
+    background: var(--primary);
     height: 100vh;
     gap: 125px;
     overflow-y: scroll;
@@ -28,13 +28,11 @@
 }
 
 .emailHeader {
-    color: #FFFFFF;
-    -webkit-text-stroke: 1px black;
-    -moz-text-stroke: 1px black;
+    color: var(--secondary);
 }
 
 .emailDesc {
-    color: #FFFFFF;
+    color: var(--secondary);
 }
 
 .linkContent {
@@ -51,6 +49,10 @@
     gap: 53px;
 }
 
+.iconList svg path {
+    fill: var(--secondary);
+}
+
 .rightContent {
     display: flex;
     flex-direction: column;
@@ -63,7 +65,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 74px 34px;
-    background: #2F2D4F;
+    background: var(--secondary);
     border-radius: 10px;
     max-width: 479px;
     max-height: 361px;
@@ -78,11 +80,11 @@
 }
 
 .newsletterDesc {
-    color: #FFFFFF;
+    color: var(--primary);
 }
 
 .input {
-    background: #D9D9D9;
+    background: var(--primary);
     border-radius: 20px;
     max-width: 649px;
     width: 100%;

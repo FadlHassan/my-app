@@ -1,6 +1,7 @@
 :root {
-  --blue: #6D72C3;
-  --white: #FFFFFF;
+  --primary: #FFFFFF;
+  --secondary: #0B0505;
+  --tertiary: #766E6E;
 }
 
 .App {

@@ -12,9 +12,9 @@
 }
 
 .navLink:hover {
-    border-bottom: 3px solid var(--white);
+    border-bottom: 3px solid var(--secondary);
 }
 
 .color {
-    color: var(--white);
+    color: var(--secondary);
 }
