@@ -40,9 +40,10 @@
 }
 
 .description {
-    font-size: 32px;
+    font-size: 24px;
     font-family: "Poppins";
     font-weight: 400;
+    line-height: normal;
 }
 
 .content {

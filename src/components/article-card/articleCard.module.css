@@ -5,7 +5,7 @@
     align-items: flex-start;
     padding: 16px 26px 16px 16px;
     gap: 10px;
-    background: #2F2D4F;
+    background: var(--secondary);
     border-radius: 10px;
     max-width: 479px;
     max-height: 361px;
@@ -30,9 +30,9 @@
 }
 
 .titleColor {
-    color: #E4FDE1;
+    color: var(--primary);
 }
 
 .subtitleColor {
-    color: #E4FDE1;
+    color: var(--primary);
 }
