@@ -5,14 +5,38 @@ import styles from './headerBar.module.css';
 import { NavLink } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { useMediaQuery } from 'react-responsive';
+import { useNavigate } from 'react-router-dom';
 
 function HeaderBar() {
   const isTabletOrLargerDevice = useMediaQuery({ minWidth: 768 });
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleToggleOverlay = () => {
     setIsOverlayOpen(!isOverlayOpen);
   };
+
+  const handleNavigate = (page) => {
+    switch (page) {
+      case 'blog':
+        console.log('Clicked blog');
+        navigate('/blog');
+        break;
+      case 'contact':
+        console.log('Clicked contact');
+        navigate('/contact');
+        break;
+      case 'about':
+        console.log('Clicked about');
+        navigate('/about');
+        break;
+      default:
+        console.log('Clicked home');
+        navigate('/');
+        break;
+    }
+    handleToggleOverlay();
+  }
   
   const linksLg = 
       <ul className = {styles.header}>
@@ -46,28 +70,28 @@ function HeaderBar() {
     <div className={`${styles.overlay} ${isOverlayOpen ? styles.open : ''}`}>        
       <ul>
         <li>
-            <NavLink className={styles.navLink}
-                    to="/">
+            <a className={styles.navLink}
+                    onClick={() => handleNavigate('home')}>
               <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>Home</Typography>
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink className={styles.navLink}
-                    to="/blog">
+            <a className={styles.navLink}
+                    onClick={() => handleNavigate('blog')}>
               <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>Blog</Typography>
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink className={styles.navLink}
-                    to="/contact">
+            <a className={styles.navLink}
+                    onClick={() => handleNavigate('contact')}>
               <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>Contact</Typography>
-            </NavLink>
+            </a>
           </li>
           <li>
-          <NavLink className={styles.navLink}
-                  to="/about">
+          <a className={styles.navLink}
+                  onClick={() => handleNavigate('about')}>
             <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>About</Typography>
-          </NavLink>
+          </a>
           </li>
         </ul>
       </div>
