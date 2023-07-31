@@ -1,32 +1,33 @@
-.landingView {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 80px 0px;
-    background: var(--primary);
-    height: 100vh;
-    gap: 125px;
-    overflow: hidden;
+.landingViewContent {
+    justify-content: space-between;
 }
 
-.frame {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    max-width: 1312px;
-    justify-content: space-between;
+.landingViewContent h1 {
+    margin-top: 120px;
+}
+
+.landingViewMobileContent {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .titleSection {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    max-width: 863px;
 }
+
+.title {
+    text-align: center;
+}
+
+.title::first-line {
+    text-align: left;
+}
+
 
 .titleColor {
     color: var(--secondary);
-}
-
-.imageStyle {
-    width: 616px;
-    height: 857px;
 }

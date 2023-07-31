@@ -19,19 +19,15 @@ function HeaderBar() {
   const handleNavigate = (page) => {
     switch (page) {
       case 'blog':
-        console.log('Clicked blog');
         navigate('/blog');
         break;
       case 'contact':
-        console.log('Clicked contact');
         navigate('/contact');
         break;
       case 'about':
-        console.log('Clicked about');
         navigate('/about');
         break;
       default:
-        console.log('Clicked home');
         navigate('/');
         break;
     }
