@@ -8,6 +8,9 @@ import { useMediaQuery } from 'react-responsive';
 
 const LandingView = () => {
     const isDesktopOrLarger = useMediaQuery({ maxWidth: 1024 });
+    const landingViewStyle = {
+        paddingBottom: '0'
+    };
     
     return (
         isDesktopOrLarger ?
@@ -18,7 +21,7 @@ const LandingView = () => {
                             </Typography>
                 </div>
             </View> :
-            <View className={styles.landingViewContent}>
+            <View className={styles.landingViewContent} viewStyle={landingViewStyle}>
                 <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_XL} color={styles.titleColor}>
                     Welcome, my name is <br/> Fadl Hassan <br/>
                 </Typography>

@@ -3,7 +3,6 @@
     justify-content: center;
     grid-template-columns: repeat(auto-fit, min(100%, 475px));
     grid-gap: 32px;
-    overflow-y: auto;
     margin-top: 40px;
 }
 

@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: column;
     background: var(--primary);
-    overflow: hidden;
     padding: 40px 40px;
-    height: 100%;
     margin: auto;
-    max-width: 1600px;
+    overflow-y: auto;
+    max-width: 1600px; /** need to revise this */
 }
 
 .content {
