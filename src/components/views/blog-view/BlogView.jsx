@@ -1,14 +1,20 @@
 import React from "react";
-import HeaderBar from "../../header-bar/HeaderBar";
 import styles from './blogView.module.css';
 import ArticleCard from "../../article-card/ArticleCard";
+import View from "../view/View";
 
 const BlogView = () => {
     return (
-        <div className={styles.blogView}>
-            <HeaderBar/>
+        <View className={styles.blogView}>
             <ArticleCard title="Title" subtitle="Subtitle" />
-        </div>
+            <ArticleCard title="Title" subtitle="Subtitle" />
+            <ArticleCard title="Title" subtitle="Subtitle" />
+            <ArticleCard title="Title" subtitle="Subtitle" />
+            <ArticleCard title="Title" subtitle="Subtitle" />
+            <ArticleCard title="Title" subtitle="Subtitle" />
+            <ArticleCard title="Title" subtitle="Subtitle" />
+
+        </View>
     );
 };
 
