@@ -5,6 +5,8 @@
     overflow: hidden;
     padding: 40px 40px;
     height: 100%;
+    margin: auto;
+    max-width: 1600px;
 }
 
 .content {

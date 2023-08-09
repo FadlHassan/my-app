@@ -1,9 +1,14 @@
 .blogView {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 80px 0px;
-    background: var(--blue);
-    height: 100vh;
-    gap: 125px;
-    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, min(100%, 475px));
+    grid-gap: 32px;
+    overflow-y: auto;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .blogView {
+        justify-content: center;
+    }
 }

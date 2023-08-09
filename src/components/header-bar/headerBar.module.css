@@ -4,7 +4,6 @@
     flex-wrap: column;
     align-items: flex-start;
     gap: 32px;
-    margin-bottom: 40px;
 }
 
 .overlay {

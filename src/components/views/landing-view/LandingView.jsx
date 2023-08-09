@@ -7,10 +7,10 @@ import View from "../view/View";
 import { useMediaQuery } from 'react-responsive';
 
 const LandingView = () => {
-    const isMobileOrTablet = useMediaQuery({ maxWidth: 1024 });
+    const isDesktopOrLarger = useMediaQuery({ maxWidth: 1024 });
     
     return (
-        isMobileOrTablet ?
+        isDesktopOrLarger ?
             <View className={styles.landingViewMobileContent}>
                 <div className={styles.titleSection}>
                             <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_XL} color={styles.titleColor}>
