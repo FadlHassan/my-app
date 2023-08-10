@@ -8,7 +8,6 @@ import { useMediaQuery } from 'react-responsive';
 
 const LandingView = () => {
     const isDesktopOrLarger = useMediaQuery({ minWidth: 1024 });
-    const isTabletOrLarger = useMediaQuery({minWidth: 768, maxWidth: 1024});
     const landingViewStyle = {
         paddingBottom: '0',
         overflow: 'hidden'
@@ -22,13 +21,13 @@ const LandingView = () => {
     return (
         isDesktopOrLarger ?
         <View className={styles.landingViewContent} viewStyle={landingViewStyle}>
-                <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_XL} color={styles.titleColor}>
+                <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_L} color={styles.titleColor}>
                     Welcome, my name is <br/> Fadl Hassan <br/>
                 </Typography>
                 <img src={myImage} alt="Landing page"/>
             </View>  :
             <View className={styles.landingViewMobileContent} viewStyle={landingViewMobileStyle}>
-                <Typography className={styles.title} id="landingPageTitle" variant={isTabletOrLarger ? TypographyVariants.HEADING_XL : TypographyVariants.HEADING_L} color={styles.titleColor}>
+                <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_L} color={styles.titleColor}>
                  {'Welcome, my name is\nFadl Hassan'}
                 </Typography>
             </View>
