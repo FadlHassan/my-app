@@ -20,13 +20,13 @@ const LandingView = () => {
     
     return (
         isDesktopOrLarger ?
-        <View className={styles.landingViewContent} viewStyle={landingViewStyle}>
+        <View className={styles.content} viewStyle={landingViewStyle}>
                 <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_L} color={styles.titleColor}>
                     Welcome, my name is <br/> Fadl Hassan <br/>
                 </Typography>
                 <img src={myImage} alt="Landing page"/>
             </View>  :
-            <View className={styles.landingViewMobileContent} viewStyle={landingViewMobileStyle}>
+            <View className={styles.mobileContent} viewStyle={landingViewMobileStyle}>
                 <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_L} color={styles.titleColor}>
                  {'Welcome, my name is\nFadl Hassan'}
                 </Typography>
