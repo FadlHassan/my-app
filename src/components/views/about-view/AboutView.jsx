@@ -8,7 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 
 const AboutView = () => {
     const isLargeScreen = useMediaQuery({ minWidth: 1024 });
-    const isSmallToMediumScreen = useMediaQuery({ maxWidth: 568});
+    const isSmallToMediumScreen = useMediaQuery({ maxWidth: 768});
 
     return (
         <View className={styles.content}>
