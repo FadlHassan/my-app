@@ -8,11 +8,11 @@ import { useMediaQuery } from 'react-responsive';
 
 const AboutView = () => {
     const isLargeScreen = useMediaQuery({ minWidth: 1024 });
-    const isSmallScreen = useMediaQuery({ minWidth: 320, maxWidth: 568});
+    const isSmallToMediumScreen = useMediaQuery({ maxWidth: 568});
 
     return (
         <View className={styles.content}>
-            <Typography variant={isSmallScreen ? TypographyVariants.DESCRIPTION : TypographyVariants.CONTENT} className={styles.text}>
+            <Typography variant={isSmallToMediumScreen ? TypographyVariants.DESCRIPTION : TypographyVariants.CONTENT} className={styles.text}>
                 Welcome to my website, my name is Fadl Praveesh Hassan.
                 <br></br><br></br>
                 I’m from India and I’m currently 22 years old. I was raised in Dubai till I was 18 and then moved to the UK to do my Bachelors in Computer Science at the University of Edinburgh. 
