@@ -8,13 +8,13 @@ function getComponent(variant) {
     case TypographyVariants.HEADING_L:
     case TypographyVariants.HEADING_M:
     case TypographyVariants.HEADING_S:
+      return variant;
     case TypographyVariants.CONTACT_HEADER:
     case TypographyVariants.EMAIL:
     case TypographyVariants.DESCRIPTION:
     case TypographyVariants.CONTENT:
-      return variant;
     default:
-      return 'p';
+      return 'span';
   }
 }
 

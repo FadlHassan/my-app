@@ -1,26 +1,10 @@
-.aboutView {
+.content {
     display: flex;
-    flex-direction: column;
-    padding: 40px 80px 0px;
-    background: var(--primary);
-    height: 100vh;
-    gap: 125px;
-    overflow-y: scroll;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 40px;
 }
 
-.aboutInfo {
-    display: flex;
-    align-items: flex-start;
-    gap: 80px;
-    flex: 1;
-}
-
-.aboutInfo content {
+.text {
     text-align: left;
-    color: var(--secondary);
-}
-
-.aboutInfo img {
-    max-width: 741px;
-    max-height: 637px;
 }
