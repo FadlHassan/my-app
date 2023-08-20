@@ -42,21 +42,25 @@ const ContactView = () => {
         </div>
 
     return (
-        isDesktopOrLarger ?
-            <View className={styles.content}>
+        <View>
+             {
+            isDesktopOrLarger ?
+            <div className={styles.content}>
                 <div>
                     {emailContent}
                     {linkContent}
                 </div>
                 {newsLetterContent}
-            </View> : 
-            <View className={styles.tabletContent}>
+            </div> : 
+            <div className={styles.tabletContent}>
                 {newsLetterContent}
                 <div>
                     {emailContent}
                     {linkContent}
                 </div>
-            </View>
+            </div>
+        }
+        </View>
     );
 }
 

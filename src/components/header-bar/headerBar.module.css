@@ -4,6 +4,9 @@
     flex-wrap: column;
     align-items: flex-start;
     gap: 32px;
+    padding: 40px 40px 0 40px;
+    margin: auto;
+    max-width: 1600px;
 }
 
 .overlay {
@@ -38,6 +41,10 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.hamburger {
+    padding: 40px 40px 0 40px;
 }
 
 .hamburger >div {

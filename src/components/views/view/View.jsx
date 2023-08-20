@@ -3,7 +3,7 @@ import styles from './view.module.css';
 
 const View = ({ className, children }) => {
     return (
-        <div className={`${className}`}>
+        <div className={`${styles.view} ${className}`}>
             {children}
         </div>
     );

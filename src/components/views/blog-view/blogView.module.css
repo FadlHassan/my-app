@@ -1,13 +1,12 @@
-.blogView {
+.content {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, min(100%, 475px));
     grid-gap: 32px;
-    margin-top: 40px;
 }
 
 @media screen and (max-width: 1024px) {
-    .blogView {
+    .content {
         justify-content: center;
     }
 }

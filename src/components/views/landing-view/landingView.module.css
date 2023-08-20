@@ -1,6 +1,7 @@
 .content {
     display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .content h2 {
@@ -8,9 +9,10 @@
 }
 
 .mobileContent {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .titleSection {

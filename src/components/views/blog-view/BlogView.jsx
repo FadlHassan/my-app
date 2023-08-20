@@ -5,15 +5,16 @@ import View from "../view/View";
 
 const BlogView = () => {
     return (
-        <View className={styles.blogView}>
-            <ArticleCard title="Title" subtitle="Subtitle" />
-            <ArticleCard title="Title" subtitle="Subtitle" />
-            <ArticleCard title="Title" subtitle="Subtitle" />
-            <ArticleCard title="Title" subtitle="Subtitle" />
-            <ArticleCard title="Title" subtitle="Subtitle" />
-            <ArticleCard title="Title" subtitle="Subtitle" />
-            <ArticleCard title="Title" subtitle="Subtitle" />
-
+        <View>
+            <div className={styles.content}>
+                <ArticleCard title="Title" subtitle="Subtitle" />
+                <ArticleCard title="Title" subtitle="Subtitle" />
+                <ArticleCard title="Title" subtitle="Subtitle" />
+                <ArticleCard title="Title" subtitle="Subtitle" />
+                <ArticleCard title="Title" subtitle="Subtitle" />
+                <ArticleCard title="Title" subtitle="Subtitle" />
+                <ArticleCard title="Title" subtitle="Subtitle" />
+            </div>
         </View>
     );
 };

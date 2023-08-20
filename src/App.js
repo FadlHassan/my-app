@@ -10,7 +10,7 @@ import HeaderBar from './components/header-bar/HeaderBar';
 function App() {
   return (
     <Router>
-        <div className='container'>
+        <div className='scrollContainer'>
         <HeaderBar />
           <Routes>
             <Route exact path = "/" element={<LandingView/>} />
