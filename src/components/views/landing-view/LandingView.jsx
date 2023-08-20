@@ -11,7 +11,7 @@ const LandingView = ({style}) => {
     const isDesktopOrLarger = useMediaQuery({ minWidth: 1024 });
         
     return (
-        <View>
+        <View className={styles.landingView}>
             {
                 isDesktopOrLarger ?
                 <div className={styles.content} style={style}>
