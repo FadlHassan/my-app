@@ -1,8 +1,6 @@
 .content {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 0;
-    overflow-y: auto;
 }
 
 .content h2 {
@@ -10,10 +8,9 @@
 }
 
 .mobileContent {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .titleSection {
@@ -33,4 +30,9 @@
 
 .titleColor {
     color: var(--secondary);
+}
+
+.img {
+    object-fit: contain;
+    max-height: 830px;
 }

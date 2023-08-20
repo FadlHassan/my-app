@@ -7,14 +7,16 @@
 .App {
   text-align: center;
   height: 100vh;
+}
 
+.container {
   display: flex;
   flex-direction: column;
   background: var(--primary);
   padding: 40px 40px;
   margin: auto;
-  overflow-y: auto;
   max-width: 1600px; /** need to revise this */
+  height: 100%;
 }
 
 .App-logo {
