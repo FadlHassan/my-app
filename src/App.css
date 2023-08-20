@@ -4,18 +4,16 @@
   --tertiary: #766E6E;
 }
 
-.App {
+#root {
   text-align: center;
   height: 100vh;
+  width: 100vw;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  background: var(--primary);
-  padding: 40px 40px;
-  margin: auto;
-  max-width: 1600px; /** need to revise this */
+.scrollContainer {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
   height: 100%;
 }
 

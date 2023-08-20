@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     gap: 32px;
-    margin-top: 40px;
 }
 
 .content > div:first-child, .tabletContent > div:last-child {
