@@ -19,7 +19,7 @@ const LandingView = ({style}) => {
                 <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_L} color={styles.titleColor}>
                     Welcome, my name is <br/> Fadl Hassan <br/>
                 </Typography>
-                <img src={myImage} alt="Landing page"/>
+                <img src={myImage} alt="Landing page" className={styles.img}/>
             </div>  :
             <div className={styles.mobileContent} style={landingViewMobileStyle}>
                 <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_L} color={styles.titleColor}>
