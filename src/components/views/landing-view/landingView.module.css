@@ -1,6 +1,8 @@
 .content {
+    display: flex;
     justify-content: space-between;
     padding-bottom: 0;
+    overflow-y: auto;
 }
 
 .content h2 {
@@ -9,6 +11,7 @@
 
 .mobileContent {
     height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
