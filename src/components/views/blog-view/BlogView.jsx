@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from './blogView.module.css';
 import ArticleCard from "../../article-card/ArticleCard";
 import View from "../view/View";
+import { getArticles } from "../../../services/article.service";
 
 const BlogView = () => {
+    const [articles, setArticles] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        async function fetchMyData() {
+            const result = await getArticles();
+            setArticles(result);
+            setLoading(false);
+        }
+        fetchMyData();
+      }, []);
+
+    if (loading) return <div>Loading...</div>;
+
     return (
         <View>
             <div className={styles.content}>
-                <ArticleCard title="Title" subtitle="Subtitle" />
-                <ArticleCard title="Title" subtitle="Subtitle" />
-                <ArticleCard title="Title" subtitle="Subtitle" />
-                <ArticleCard title="Title" subtitle="Subtitle" />
-                <ArticleCard title="Title" subtitle="Subtitle" />
-                <ArticleCard title="Title" subtitle="Subtitle" />
-                <ArticleCard title="Title" subtitle="Subtitle" />
+                {
+                    articles.map((article) => {
+                        return <ArticleCard title={article.title} subtitle={article.subtitle} />
+                    })
+                }
             </div>
         </View>
     );
