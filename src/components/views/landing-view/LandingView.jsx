@@ -1,26 +1,32 @@
 import React from "react";
 import TypographyVariants from "../../../data/typography_variants";
 import Typography from "../../typography/Typography";
-import HeaderBar from "../../header-bar/HeaderBar";
 import styles from './landingView.module.css';
 import myImage from '../../../images/landing-page-girl.png';
+import { useMediaQuery } from 'react-responsive';
+import View from "../view/View";
+import ArticleView from "../article-view/ArticleView";
 
-const LandingView = () => {
-    const title = 'Welcome, my name is Fadl Hassan.';
-
+const LandingView = ({style}) => {
+    const isDesktopOrLarger = useMediaQuery({ minWidth: 1024 });
+        
     return (
-        <div className={styles.landingView}>
-            <HeaderBar/>
-            <div className={styles.frame}>
-                <div className={styles.titleSection}>
-                    <Typography id="landingPageTitle" variant={TypographyVariants.HEADING_XL} color={styles.titleColor}>
-                        {title}
+        <View className={styles.landingView}>
+            {
+                isDesktopOrLarger ?
+                <div className={styles.content} style={style}>
+                    <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_L} color={styles.titleColor}>
+                        Welcome, my name is <br/> Fadl Hassan <br/>
+                    </Typography>
+                    <img src={myImage} alt="Landing page" className={styles.img}/>
+                </div>  :
+                <div className={styles.mobileContent}>
+                    <Typography className={styles.title} id="landingPageTitle" variant={TypographyVariants.HEADING_L} color={styles.titleColor}>
+                    {'Welcome, my name is\nFadl Hassan'}
                     </Typography>
                 </div>
-                <img className={styles.imageStyle} src={myImage} alt="Landing ppage"/>
-            </div>
-        </div>
-        
+            }
+        </View>
     );
 };
 

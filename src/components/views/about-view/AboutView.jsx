@@ -1,17 +1,19 @@
 import React from "react";
 import styles from './aboutView.module.css';
-import HeaderBar from "../../header-bar/HeaderBar";
 import Typography from "../../typography/Typography";
 import TypographyVariants from "../../../data/typography_variants";
 import Slideshow from "../../slideshow/Slideshow";
+import View from "../view/View";
+import { useMediaQuery } from 'react-responsive';
 
 const AboutView = () => {
+    const isLargeScreen = useMediaQuery({ minWidth: 1024 });
+    const isSmallToMediumScreen = useMediaQuery({ maxWidth: 768});
 
     return (
-        <div className={styles.aboutView}>
-            <HeaderBar />
-            <div className={styles.aboutInfo}>
-                <Typography variant={TypographyVariants.CONTENT} className={styles.content}>
+        <View>
+            <div className={styles.content}>
+                <Typography variant={isSmallToMediumScreen ? TypographyVariants.DESCRIPTION : TypographyVariants.CONTENT} className={styles.text}>
                     Welcome to my website, my name is Fadl Praveesh Hassan.
                     <br></br><br></br>
                     I’m from India and I’m currently 22 years old. I was raised in Dubai till I was 18 and then moved to the UK to do my Bachelors in Computer Science at the University of Edinburgh. 
@@ -19,9 +21,9 @@ const AboutView = () => {
                     <br></br><br></br>
                     Apart from being an engineer, I enjoy writing blogs, singing, watching anime, and much more.
                 </Typography>
-                <Slideshow />
+            { isLargeScreen && <Slideshow /> }
             </div>
-        </div>
+        </View>
     );
 };
 

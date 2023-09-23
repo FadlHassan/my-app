@@ -3,11 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 16px 26px 16px 16px;
+    padding: 16px 26px;
     gap: 10px;
     background: var(--secondary);
-    border-radius: 10px;
-    max-width: 479px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 475px;
     max-height: 361px;
 }
 

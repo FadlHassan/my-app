@@ -1,14 +1,13 @@
 import React from "react";
 import styles from './articleView.module.css';
-import HeaderBar from "../../header-bar/HeaderBar";
 import Typography from "../../typography/Typography";
 import TypographyVariants from "../../../data/typography_variants";
 import myImage from '../../../images/landing-page-girl.png';
+import View from "../view/View";
 
 const ArticleView = () => {
     return (
-        <div className={styles.articleView}>
-            <HeaderBar/>
+        <View>
             <div className={styles.content}>
                 <div className={styles.imageContainer}>
                     <img src={myImage} alt="ArticleViewImage"/>
@@ -29,7 +28,7 @@ const ArticleView = () => {
                     </Typography>
                 </div>
             </div>
-        </div>
+        </View>
     );
 };
 

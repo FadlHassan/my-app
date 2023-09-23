@@ -1,50 +1,57 @@
-.contactView {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 80px 0px;
-    background: var(--primary);
-    height: 100vh;
-    gap: 125px;
-    overflow-y: scroll;
-}
-
 .content {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    gap: 32px;
 }
 
-.leftContent {
+.content > div:first-child, .tabletContent > div:last-child {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 90px;
 }
 
-.emailContent {
+.tabletContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    margin-top: 40px;
+}
+
+.emailContent, .linkContent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+@media screen and (max-width: 1023px) {
+    .tabletContent > div:last-child {
+        align-items: center;
+    }
+
+    .emailContent, .linkContent {
+        align-items: center;
+    }
 }
 
 .emailHeader {
     color: var(--secondary);
+    text-decoration: underline;
+    margin-bottom: 12px;
 }
 
 .emailDesc {
     color: var(--secondary);
-}
-
-.linkContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    word-break: break-word;
 }
 
 .iconList {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 0px;
     gap: 53px;
 }
@@ -53,14 +60,7 @@
     fill: var(--secondary);
 }
 
-.rightContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 90px;
-}
-
-.newsletter {
+.newsLetterContent {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -69,13 +69,6 @@
     border-radius: 10px;
     max-width: 479px;
     max-height: 361px;
-}
-
-.newsletterContent {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
     gap: 16px;
 }
 
