@@ -1,0 +1,8 @@
+.view {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary);
+    padding: 40px 40px;
+    margin: auto;
+    max-width: 1600px; /** need to revise this */
+}

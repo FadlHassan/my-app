@@ -4,8 +4,17 @@
   --tertiary: #766E6E;
 }
 
-.App {
+#root {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.scrollContainer {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .App-logo {
