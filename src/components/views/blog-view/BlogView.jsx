@@ -23,7 +23,7 @@ const BlogView = () => {
         <View>
             <div className={styles.content}>
                 {
-                    articles.map((article) => {
+                    articles?.map((article) => {
                         return <ArticleCard title={article.title} subtitle={article.subtitle} />
                     })
                 }
