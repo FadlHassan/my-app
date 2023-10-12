@@ -1,9 +1,9 @@
-import React from "react";
-import styles from './articleView.module.css';
-import Typography from "../../typography/Typography";
-import TypographyVariants from "../../../data/typography_variants";
-import myImage from '../../../images/landing-page-girl.jpg';
-import View from "../view/View";
+import React from 'react';
+import styles from 'components/views/article-view/articleView.module.css';
+import Typography from 'components/typography/Typography';
+import TypographyVariants from 'data/typography_variants';
+import myImage from 'images/landing-page-girl.jpg';
+import View from 'components/views/view/View';
 
 const ArticleView = () => {
     return (

@@ -1,11 +1,11 @@
-import React from "react";
-import styles from './contactView.module.css';
-import Typography from "../../typography/Typography";
-import TypographyVariants from "../../../data/typography_variants";
-import GithubIcon from "../../../icons/GithubIcon";
-import LinkedInIcon from "../../../icons/LinkedInIcon";
-import InstagramIcon from "../../../icons/InstagramIcon";
-import View from "../view/View";
+import React from 'react';
+import styles from 'components/views/contact-view/contactView.module.css';
+import Typography from 'components/typography/Typography';
+import TypographyVariants from 'data/typography_variants';
+import GithubIcon from "icons/GithubIcon";
+import LinkedInIcon from "icons/LinkedInIcon";
+import InstagramIcon from "icons/InstagramIcon";
+import View from "components/views/view/View";
 import { useMediaQuery } from 'react-responsive';
 
 const ContactView = () => {

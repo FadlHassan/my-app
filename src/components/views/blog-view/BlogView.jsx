@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import styles from './blogView.module.css';
-import ArticleCard from "../../article-card/ArticleCard";
-import View from "../view/View";
-import { getArticles } from "../../../services/article.service";
+import React, { useState, useEffect } from 'react';
+import styles from 'components/views/blog-view/blogView.module.css';
+import ArticleCard from "components/article-card/ArticleCard";
+import View from 'components/views/view/View';
+import { getArticles } from "services/article.service";
 
 const BlogView = () => {
     const [articles, setArticles] = useState(null);
