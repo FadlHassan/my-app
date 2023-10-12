@@ -3,6 +3,9 @@ import styles from './slideShow.module.css';
 import image1 from '../../images/AboutViewImage1.jpg'
 import image2 from '../../images/AboutViewImage2.jpg';
 import image3 from '../../images/AboutViewImage3.jpg';
+import placeholderImg from  '../../images/AboutViewImage1-placeholder.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Slideshow = () => {
   const images = [image1, image2, image3];
@@ -38,12 +41,14 @@ const Slideshow = () => {
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {images.map((image, index) => (
-          <img
+          <LazyLoadImage
             alt='slideshowImage'
+            effect='blur'
+            placeholderSrc={index === 0 ? placeholderImg : null}
             className={styles.slide}
             key={index}
             src={image}
-          ></img>
+          />
         ))}
       </div>
 
