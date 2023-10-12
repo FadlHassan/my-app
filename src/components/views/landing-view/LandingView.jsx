@@ -1,11 +1,11 @@
-import React from "react";
-import TypographyVariants from "../../../data/typography_variants";
-import Typography from "../../typography/Typography";
-import styles from './landingView.module.css';
-import myImage from '../../../images/landing-page-girl.jpg';
+import React from 'react';
+import Typography from 'components/typography/Typography';
+import TypographyVariants from 'data/typography_variants';
+import styles from 'components/views/landing-view/landingView.module.css';
+import myImage from 'images/landing-page-girl.jpg';
 import { useMediaQuery } from 'react-responsive';
-import View from "../view/View";
-import placeholderImg from '../../../images/landing-page-girl-placeholder.jpg';
+import View from 'components/views/view/View';
+import placeholderImg from 'images/landing-page-girl-placeholder.jpg';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 

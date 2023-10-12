@@ -1,9 +1,9 @@
-import React from "react";
-import styles from './aboutView.module.css';
-import Typography from "../../typography/Typography";
-import TypographyVariants from "../../../data/typography_variants";
-import Slideshow from "../../slideshow/Slideshow";
-import View from "../view/View";
+import React from 'react';
+import styles from 'components/views/about-view/aboutView.module.css';
+import Typography from "components/typography/Typography";
+import TypographyVariants from "data/typography_variants";
+import Slideshow from "components/slideshow/Slideshow";
+import View from "components/views/view/View";
 import { useMediaQuery } from 'react-responsive';
 
 const AboutView = () => {

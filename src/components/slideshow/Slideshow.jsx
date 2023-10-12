@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import styles from './slideShow.module.css';
-import image1 from '../../images/AboutViewImage1.jpg'
-import image2 from '../../images/AboutViewImage2.jpg';
-import image3 from '../../images/AboutViewImage3.jpg';
-import placeholderImg from  '../../images/AboutViewImage1-placeholder.jpg';
+import styles from 'components/slideshow/slideShow.module.css';
+import image1 from 'images/AboutViewImage1.jpg'
+import image2 from 'images/AboutViewImage2.jpg';
+import image3 from 'images/AboutViewImage3.jpg';
+import placeholderImg from 'images/AboutViewImage1-placeholder.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 

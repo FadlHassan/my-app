@@ -1,6 +1,6 @@
 import React from "react";
-import styles from './typography.module.css';
-import TypographyVariants from "../../data/typography_variants";
+import styles from 'components/typography/typography.module.css';
+import TypographyVariants from "data/typography_variants";
 
 function getComponent(variant) {
   switch (variant) {
