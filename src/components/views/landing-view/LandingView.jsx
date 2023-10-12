@@ -2,7 +2,7 @@ import React from "react";
 import TypographyVariants from "../../../data/typography_variants";
 import Typography from "../../typography/Typography";
 import styles from './landingView.module.css';
-import myImage from '../../../images/landing-page-girl.png';
+import myImage from '../../../images/landing-page-girl.jpg';
 import { useMediaQuery } from 'react-responsive';
 import View from "../view/View";
 

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import styles from './slideShow.module.css';
-import image1 from '../../images/AboutViewImage1.png'
-import image2 from '../../images/AboutViewImage2.png';
-import image3 from '../../images/AboutViewImage3.png';
+import image1 from '../../images/AboutViewImage1.jpg'
+import image2 from '../../images/AboutViewImage2.jpg';
+import image3 from '../../images/AboutViewImage3.jpg';
 
 const Slideshow = () => {
   const images = [image1, image2, image3];
