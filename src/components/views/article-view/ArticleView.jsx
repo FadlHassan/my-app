@@ -2,7 +2,7 @@ import React from "react";
 import styles from './articleView.module.css';
 import Typography from "../../typography/Typography";
 import TypographyVariants from "../../../data/typography_variants";
-import myImage from '../../../images/landing-page-girl.png';
+import myImage from '../../../images/landing-page-girl.jpg';
 import View from "../view/View";
 
 const ArticleView = () => {
