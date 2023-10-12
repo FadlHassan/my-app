@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './view.module.css';
+import styles from 'components/views/view/view.module.css';
 
 const View = ({ className, children }) => {
     return (

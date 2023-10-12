@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Typography from '../typography/Typography';
-import TypographyVariants from '../../data/typography_variants';
-import styles from './headerBar.module.css';
 import { NavLink } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
+import Typography from 'components/typography/Typography';
+import TypographyVariants from 'data/typography_variants';
+import styles from 'components/header-bar/headerBar.module.css';
 
 function HeaderBar() {
   const isTabletOrLargerDevice = useMediaQuery({ minWidth: 768 });
