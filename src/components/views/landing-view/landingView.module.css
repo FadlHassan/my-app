@@ -38,6 +38,30 @@
     color: var(--secondary);
 }
 
+
+.imagePopup {
+    position: relative;
+    animation: bounce 1s ease-out;
+    animation-fill-mode: forwards;  
+    height: 100%;
+}
+  
+  
+@keyframes bounce {
+  0% {
+    transform: translateY(100%);
+  }
+  60% {
+    transform: translateY(-5%);
+  }
+  80% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .img {
     object-fit: contain;
     max-height: 834px;
