@@ -1,8 +1,8 @@
-import React from "react";
-import styles from './articleCard.module.css';
-import Typography from "../typography/Typography";
-import TypographyVariants from "../../data/typography_variants";
-import myImage from '../../images/landing-page-girl.jpg';
+import React from 'react';
+import styles from 'components/article-card/articleCard.module.css';
+import Typography from 'components/typography/Typography';
+import TypographyVariants from 'data/typography_variants';
+import myImage from 'images/landing-page-girl.jpg';
 import { Link } from 'react-router-dom';
 
 const ArticleCard = ({ title, subtitle }) => {
