@@ -5,7 +5,6 @@ import styles from './landingView.module.css';
 import myImage from '../../../images/landing-page-girl.png';
 import { useMediaQuery } from 'react-responsive';
 import View from "../view/View";
-import ArticleView from "../article-view/ArticleView";
 
 const LandingView = ({style}) => {
     const isDesktopOrLarger = useMediaQuery({ minWidth: 1024 });
