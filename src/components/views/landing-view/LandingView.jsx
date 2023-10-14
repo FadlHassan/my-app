@@ -2,12 +2,9 @@ import React from 'react';
 import Typography from 'components/typography/Typography';
 import TypographyVariants from 'data/typography_variants';
 import styles from 'components/views/landing-view/landingView.module.css';
-import myImage from 'images/landing-page-girl.jpg';
+import landingPageImage from 'images/landing-page-avatar.png';
 import { useMediaQuery } from 'react-responsive';
 import View from 'components/views/view/View';
-import placeholderImg from 'images/landing-page-girl-placeholder.jpg';
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-// import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const LandingView = ({style}) => {
     const isDesktopOrLarger = useMediaQuery({ minWidth: 1024 });
@@ -21,7 +18,7 @@ const LandingView = ({style}) => {
                         Welcome, my name is <br/> Fadl Hassan <br/>
                     </Typography>
                     <div className={styles.imagePopup}>
-                        <img effect="blur" placeholderSrc={placeholderImg} src={myImage} alt="Landing page" className={styles.img}/>                        
+                        <img src={landingPageImage} alt="Landing page" className={styles.img}/>                        
                     </div>
                 </div>  :
                 <div className={styles.mobileContent}>
