@@ -1,6 +1,7 @@
 .landingView {
     overflow-y: hidden;
     padding: 40px 40px 0 40px !important;
+    height: calc(100vh - 103px) !important;
 }
 
 .content {
@@ -43,7 +44,7 @@
     position: relative;
     animation: bounce 1s ease-out;
     animation-fill-mode: forwards;  
-    height: 100%;
+    overflow: hidden;
 }
   
   
@@ -63,6 +64,5 @@
 }
 
 .img {
-    object-fit: contain;
-    max-height: 834px;
+  height: 100%;
 }
