@@ -18,6 +18,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 767px) {
+        width: 275px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 450px;
+    }
 }
 
 .titleSection {
@@ -36,7 +43,7 @@
 
 
 .titleColor {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 

@@ -1,3 +1,7 @@
+.contactView {
+    align-items: center;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -36,13 +40,13 @@
 }
 
 .emailHeader {
-    color: var(--secondary);
+    color: var(--primary);
     text-decoration: underline;
     margin-bottom: 12px;
 }
 
 .emailDesc {
-    color: var(--secondary);
+    color: var(--primary);
     word-break: break-word;
 }
 
@@ -57,7 +61,7 @@
 }
 
 .iconList svg path {
-    fill: var(--secondary);
+    fill: var(--primary);
 }
 
 .newsLetterContent {
@@ -65,7 +69,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 74px 34px;
-    background: var(--secondary);
+    background: var(--primary);
     border-radius: 10px;
     max-width: 479px;
     max-height: 361px;

@@ -1,7 +1,8 @@
 :root {
-  --primary: #FFFFFF;
-  --secondary: #0B0505;
+  --primary: #F5F5F5	;
+  --secondary: #4e1515;
   --tertiary: #766E6E;
+  --background: radial-gradient( circle at 15% 27.9%,  #226dc891 12.9%, rgba(133, 76, 86, 0.44) 91.2% );
 }
 
 #root {
@@ -15,6 +16,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100%;
+  background: var(--background);
 }
 
 .App-logo {
