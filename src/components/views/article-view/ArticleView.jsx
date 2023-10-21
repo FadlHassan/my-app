@@ -6,6 +6,8 @@ import myImage from 'images/landing-page-girl.jpg';
 import View from 'components/views/view/View';
 
 const ArticleView = () => {
+    const isMobile = useMediaQuery({ maxWidth: 480 });
+    
     return (
         <View>
             <div className={styles.content}>
