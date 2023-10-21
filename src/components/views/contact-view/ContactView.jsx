@@ -33,13 +33,13 @@ const ContactView = () => {
             </div>
         </div>
 
-    const newsLetterContent =
-        <div className={styles.newsLetterContent}>
-            <Typography variant={TypographyVariants.HEADING_M} className={styles.newsletterDesc}>
-                Enter email to receive newsletter:
-            </Typography>
-            <input className={styles.input}/>
-        </div>
+    // const newsLetterContent =
+    //     <div className={styles.newsLetterContent}>
+    //         <Typography variant={TypographyVariants.HEADING_M} className={styles.newsletterDesc}>
+    //             Enter email to receive newsletter:
+    //         </Typography>
+    //         <input className={styles.input}/>
+    //     </div>
 
     return (
         <View>
@@ -50,10 +50,10 @@ const ContactView = () => {
                     {emailContent}
                     {linkContent}
                 </div>
-                {newsLetterContent}
+                {/* {newsLetterContent} */}
             </div> : 
             <div className={styles.tabletContent}>
-                {newsLetterContent}
+                {/* {newsLetterContent} */}
                 <div>
                     {emailContent}
                     {linkContent}
