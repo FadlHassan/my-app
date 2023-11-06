@@ -9,10 +9,12 @@ function getComponent(variant) {
     case TypographyVariants.HEADING_M:
     case TypographyVariants.HEADING_S:
       return variant;
+    case TypographyVariants.DESCRIPTION:
+    case TypographyVariants.DESCRIPTION_S:
+    case TypographyVariants.CONTENT:
+      return 'p';
     case TypographyVariants.CONTACT_HEADER:
     case TypographyVariants.EMAIL:
-    case TypographyVariants.DESCRIPTION:
-    case TypographyVariants.CONTENT:
     default:
       return 'span';
   }

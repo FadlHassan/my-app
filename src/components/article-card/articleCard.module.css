@@ -5,7 +5,7 @@
     align-items: flex-start;
     padding: 16px 26px;
     gap: 10px;
-    background: var(--secondary);
+    background: var(--primary);
     border-radius: 20px;
     width: 100%;
     max-width: 475px;
@@ -19,21 +19,22 @@
 }
 
 .imageContainer img {
-    max-height: 199px;
+    max-height: 200px;
     width: auto;
 }
 
 .titleDescription {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
+    width: 100%;
 }
 
 .titleColor {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .subtitleColor {
-    color: var(--primary);
+    color: var(--secondary);
 }

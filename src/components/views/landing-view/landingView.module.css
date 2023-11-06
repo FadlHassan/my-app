@@ -1,6 +1,7 @@
 .landingView {
     overflow-y: hidden;
     padding: 40px 40px 0 40px !important;
+    height: calc(100vh - 103px) !important;
 }
 
 .content {
@@ -17,6 +18,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 767px) {
+        width: 275px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 450px;
+    }
 }
 
 .titleSection {
@@ -35,10 +43,32 @@
 
 
 .titleColor {
-    color: var(--secondary);
+    color: var(--primary);
+}
+
+
+.imagePopup {
+    position: relative;
+    animation: bounce 1s ease-out;
+    animation-fill-mode: forwards;  
+    overflow: hidden;
+}
+  
+@keyframes bounce {
+  0% {
+    transform: translateY(100%);
+  }
+  60% {
+    transform: translateY(-5%);
+  }
+  80% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .img {
-    object-fit: contain;
-    max-height: 834px;
+  height: 100%;
 }
