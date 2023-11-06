@@ -68,25 +68,25 @@ function HeaderBar() {
         <li>
             <a className={styles.navLink}
                     onClick={() => handleNavigate('home')}>
-              <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>Home</Typography>
+              <Typography variant={TypographyVariants.HEADING_L} color={styles.overlayTextColor}>Home</Typography>
             </a>
           </li>
           <li>
             <a className={styles.navLink}
                     onClick={() => handleNavigate('blog')}>
-              <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>Blog</Typography>
+              <Typography variant={TypographyVariants.HEADING_L} color={styles.overlayTextColor}>Blog</Typography>
             </a>
           </li>
           <li>
             <a className={styles.navLink}
                     onClick={() => handleNavigate('contact')}>
-              <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>Contact</Typography>
+              <Typography variant={TypographyVariants.HEADING_L} color={styles.overlayTextColor}>Contact</Typography>
             </a>
           </li>
           <li>
           <a className={styles.navLink}
                   onClick={() => handleNavigate('about')}>
-            <Typography variant={TypographyVariants.HEADING_L} color={styles.color}>About</Typography>
+            <Typography variant={TypographyVariants.HEADING_L} color={styles.overlayTextColor}>About</Typography>
           </a>
           </li>
         </ul>

@@ -24,6 +24,12 @@
     font-weight: 400;
 }
 
+.h5 {
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
 .header {
     font-size: 48px;
     font-family: "Poppins";
@@ -40,7 +46,15 @@
 }
 
 .description {
-    font-size: 24px;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.description_s {
+    font-size: 16px;
     font-family: "Poppins";
     font-weight: 400;
     line-height: normal;
