@@ -1,7 +1,7 @@
 export const checkAdminStatus = async () => {
     if (localStorage.getItem('isAdmin') === 'true') {
         try {
-          const response = await fetch('https://fadlhassan-1bb6131358de.herokuapp.com/api/validate-admin');
+          const response = await fetch('http://localhost:3001/api/validate-admin',);
           const data = await response.json();
     
           return data.isAdmin;
