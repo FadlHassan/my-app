@@ -11,6 +11,10 @@ import AboutView from 'components/views/about-view/AboutView';
 import HeaderBar from 'components/header-bar/HeaderBar';
 
 function App() {
+  if (process.env.NODE_ENV === 'development') {
+    localStorage.setItem('isAdmin', 'true');
+  }
+  
   const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
@@ -19,17 +23,21 @@ function App() {
 
   return (
     <Router>
-        <div className='scrollContainer'>
-        <HeaderBar />
-          <Routes>
-            <Route exact path = "/" element={<LandingView/>} />
-            <Route exact path = "/blog" element={<BlogView/>} />
-            <Route exact path = "/article" element={<ArticleView/>} />
-            <Route exact path = "/contact" element={<ContactView />} />
-            <Route exact path = "/about" element={<AboutView />} />
-            { isAdmin ? <Route exact path = "/admin" element={<AdminView />} /> : null }
-          </Routes> 
-        </div>
+      <Routes>
+        { isAdmin && <Route path="/admin" element={<AdminView />} /> }
+        <Route path="/*" element={
+          <div className='scrollContainer'>
+            <HeaderBar />
+            <Routes>
+              <Route path="/" element={<LandingView />} />
+              <Route path="/blog" element={<BlogView />} />
+              <Route path="/article" element={<ArticleView />} />
+              <Route path="/contact" element={<ContactView />} />
+              <Route path="/about" element={<AboutView />} />
+            </Routes>
+          </div>
+        } />
+      </Routes>
     </Router>   
 );
 };
