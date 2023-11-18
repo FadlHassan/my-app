@@ -9,7 +9,7 @@ const AdminView = () =>{
     const handleSubmit = async (event) => {
         event.preventDefault();
         const article = { title, subtitle };
-        const response = await fetch('/api/articles', {
+        const response = await fetch('http://localhost:3001/api/articles', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
