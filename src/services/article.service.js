@@ -15,3 +15,18 @@ export const getArticle = async (id) => {
         console.log('Error:', error);
     }
 }
+
+export const loadImage = async (id) => {
+    try {
+        const response = await fetch(`http://localhost:3001/static/image-${id}.jpg`);
+        const blob = await response.blob();
+        if (blob.type !== 'image/jpeg') {
+            throw new Error('Invalid image type');
+        }
+        const objectURL = URL.createObjectURL(blob);
+        return objectURL;
+    } catch (error) {
+        console.log('Error:', error);
+    }
+}
+

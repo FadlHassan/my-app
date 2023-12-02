@@ -6,11 +6,12 @@ import myImage from 'images/landing-page-girl.jpg';
 import View from 'components/views/view/View';
 import { useMediaQuery } from 'react-responsive';
 import { useParams } from 'react-router-dom';
-import { getArticle } from 'services/article.service';
+import { getArticle, loadImage } from 'services/article.service';
 
 const ArticleView = () => {
     const { id } = useParams();
     const [article, setArticle] = useState(null);
+    const [image, setImage] = useState(null);
     const [loading, setLoading] = useState(true);
     const isMobile = useMediaQuery({ maxWidth: 480 });
 
@@ -18,6 +19,8 @@ const ArticleView = () => {
         async function fetchMyData() {
             const result = await getArticle(id);
             setArticle(result);
+            const image = await loadImage(id);
+            setImage(image);
             setLoading(false);
         }
         fetchMyData();
@@ -29,7 +32,7 @@ const ArticleView = () => {
         <View>
             <div className={styles.content}>
                 <div className={styles.imageContainer}>
-                    <img src={myImage} alt="ArticleViewImage"/>
+                    <img src={image ? image : myImage} alt="ArticleImage"/>
                 </div>
                 <div className={styles.articleContent}>
                     <div className={styles.titleDescription}>
