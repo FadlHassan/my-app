@@ -31,7 +31,7 @@ function App() {
             <Routes>
               <Route path="/" element={<LandingView />} />
               <Route path="/blog" element={<BlogView />} />
-              <Route path="/article" element={<ArticleView />} />
+              <Route path="/article/:id" element={<ArticleView />} />
               <Route path="/contact" element={<ContactView />} />
               <Route path="/about" element={<AboutView />} />
             </Routes>
