@@ -1,6 +1,6 @@
 export const getArticles = async () => {
     try {
-        const articles = await fetch('http://localhost:3001/api/articles/').then(res => res.json()).then(data => data);
+        const articles = await fetch('https://fadlhassan-1bb6131358de.herokuapp.com/api/articles').then(res => res.json()).then(data => data);
         return articles;
     } catch (error) {
         console.log('Error:', error);
@@ -9,7 +9,7 @@ export const getArticles = async () => {
 
 export const getArticle = async (id) => {
     try {
-        const article = await fetch(`http://localhost:3001/api/articles/${id}`).then(res => res.json()).then(data => data);
+        const article = await fetch(`https://fadlhassan-1bb6131358de.herokuapp.com/api/articles/${id}`).then(res => res.json()).then(data => data);
         return article;
     } catch (error) {
         console.log('Error:', error);
@@ -18,7 +18,7 @@ export const getArticle = async (id) => {
 
 export const loadImage = async (id) => {
     try {
-        const response = await fetch(`http://localhost:3001/static/image-${id}.jpg`);
+        const response = await fetch(`https://fadlhassan-1bb6131358de.herokuapp.com/static/image-${id}.jpg`);
         const blob = await response.blob();
         if (blob.type !== 'image/jpeg') {
             throw new Error('Invalid image type');
