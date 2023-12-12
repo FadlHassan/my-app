@@ -18,7 +18,7 @@ export const getArticle = async (id) => {
 
 export const loadImage = async (id) => {
     try {
-        const imageUrl = await fetch(`https://fadlhassan-1bb6131358de.herokuapp.com/api/articles/${id}`).then(res => res.json()).then(data => data);
+        const imageUrl = await fetch(`https://fadlhassan-1bb6131358de.herokuapp.com/api/articles/image/${id}`).then(res => res.json()).then(data => data);
         if (imageUrl.message) {
             throw imageUrl.message;
         }
