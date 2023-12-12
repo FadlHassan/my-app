@@ -18,13 +18,11 @@ export const getArticle = async (id) => {
 
 export const loadImage = async (id) => {
     try {
-        const response = await fetch(`https://fadlhassan-1bb6131358de.herokuapp.com/static/image-${id}.jpg`);
-        const blob = await response.blob();
-        if (blob.type !== 'image/jpeg') {
-            throw new Error('Invalid image type');
+        const imageUrl = await fetch(`https://fadlhassan-1bb6131358de.herokuapp.com/api/articles/${id}`).then(res => res.json()).then(data => data);
+        if (imageUrl.message) {
+            throw imageUrl.message;
         }
-        const objectURL = URL.createObjectURL(blob);
-        return objectURL;
+        return imageUrl.url;
     } catch (error) {
         console.log('Error:', error);
     }
