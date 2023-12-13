@@ -28,3 +28,12 @@ export const loadImage = async (id) => {
     }
 }
 
+export const loadAllImages = async () => {
+    try {
+        const imageUrls = await fetch(`https://fadlhassan-1bb6131358de.herokuapp.com/api/articles/images`).then(res => res.json()).then(data => data);
+        return imageUrls;
+    } catch (error) {
+        console.log('Error:', error);
+    }
+}
+
