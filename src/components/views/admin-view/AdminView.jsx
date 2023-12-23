@@ -71,6 +71,23 @@ const AdminView = () =>{
         }
     }
 
+    const handleDeleteArticle = async (event) => {
+        event.preventDefault();
+
+        try {
+            const response = await fetch(`http://localhost:3001/api/articles/${id}`, {
+                method: 'DELETE'
+            });
+            if (response.ok) {
+                console.log('Successfuly deleted article');
+            } else {
+                console.log('Error in deleting article');
+            }
+        } catch (error) {
+            console.error('Form Submission Error:', error);
+        }
+    }
+
     return (
         <Box component="form" onSubmit={handleSubmit} noValidate sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',
         mt: 1, p: 3, gap: 5 }}>
@@ -124,7 +141,16 @@ const AdminView = () =>{
                 sx={{ maxWidth: 100 }}
             >
                 Submit Image
-            </Button>
+            </Button>                
+            <TextField sx={{ maxWidth: 500 }} label="Delete article" id="outlined-basic" onChange={(event) => setId(event.target.value)} />
+            <Button
+                type="submit"
+                onClick={handleDeleteArticle}
+                variant="contained"
+                sx={{ maxWidth: 100 }}
+                >
+                    Delete Article
+            </Button>        
         </Box>
     );
 }
