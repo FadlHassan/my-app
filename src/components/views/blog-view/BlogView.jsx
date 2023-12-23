@@ -28,7 +28,6 @@ const BlogView = () => {
                 {
                     articles?.map((article, index) => {
                         return (
-                        
                             <ArticleCard key={index} article={article} imageUrl={imageUrls[article.id]}/>
                         );
                     })
