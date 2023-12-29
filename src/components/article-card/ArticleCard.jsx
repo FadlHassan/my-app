@@ -10,7 +10,7 @@ const ArticleCard = ({ article, imageUrl }) => {
 	const isMobile = useMediaQuery({ maxWidth: 480 });
 
 	return (
-		<Link to={`/article/${article.id}`} className={styles.articleCard}>
+		<Link to={`/article/${article.slug}`} className={styles.articleCard}>
 			<div className={styles.imageContainer}>
 				<img src={imageUrl || myImage} alt="ArticleCardImage" />
 			</div>
