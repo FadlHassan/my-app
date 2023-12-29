@@ -53,6 +53,7 @@ export const getArticles2 = async () => {
             {
                 articles {
                     title
+                    slug
                     image {
                         url
                     }
@@ -63,6 +64,37 @@ export const getArticles2 = async () => {
         const data = await graphQLClient.request(query);
         return data.articles;
     } catch (error) {
+        console.log('Error:', error);
+    }
+}
+
+// Get an article by slug
+export const getArticle2 = async (slug) => {
+    try {
+        const endpoint = process.env.REACT_APP_GRAPH_CMS_API_KEY;
+        console.log('Endpoint:', endpoint);
+        const graphQLClient = new GraphQLClient(endpoint,{
+            headers: {
+                authorization: `Bearer ${process.env.REACT_APP_GRAPH_CMS_AUTH_TOKEN}`,
+            }
+        });
+        const query = gql`
+            query getArticle($slug: String!) {
+                article(where: {slug: $slug}) {
+                    title
+                    image {
+                        url
+                    }
+                    content {
+                        html
+                    }
+                }
+            }
+        `;
+        console.log('Query:', query);
+        const data = await graphQLClient.request(query, { slug });
+        return data.article;
+    } catch(error) {
         console.log('Error:', error);
     }
 }
