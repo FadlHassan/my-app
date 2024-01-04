@@ -35,12 +35,12 @@
 }
 
 .titleColor {
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .articleText {
     text-align: left;
-    color: var(--secondary);
+    color: var(--primary);
 }
 
 .articleText h4 {

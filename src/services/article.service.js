@@ -60,7 +60,6 @@ export const getArticles2 = async () => {
                 }
             }
         `;
-        console.log('Query:', query);
         const data = await graphQLClient.request(query);
         return data.articles;
     } catch (error) {
