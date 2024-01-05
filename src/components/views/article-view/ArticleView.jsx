@@ -6,6 +6,8 @@ import View from 'components/views/view/View';
 import { useMediaQuery } from 'react-responsive';
 import { useParams } from 'react-router-dom';
 import { getArticle2 } from 'services/article.service';
+import { CircularProgress } from '@mui/material';
+import commonStyles from 'commonStyles.module.css';
 
 const ArticleView = () => {
 	const { slug } = useParams();
@@ -22,45 +24,40 @@ const ArticleView = () => {
 		fetchMyData();
 	}, []);
 
-	if (loading) return <div>Loading...</div>;
-
 	return (
-		<View>
-			<div className={styles.content}>
-				<div className={styles.imageContainer}>
-					<img src={article.image.url} alt="ArticleImage" />
-				</div>
-				<div className={styles.articleContent}>
-					<div className={styles.titleDescription}>
-						<Typography
-							variant={
-								isMobile
-									? TypographyVariants.HEADING_L
-									: TypographyVariants.HEADING_XL
-							}
-							color={styles.titleColor}
-						>
-							{article.title}
-						</Typography>
-						{/* <Typography
-							variant={
-								isMobile
-									? TypographyVariants.HEADING_S
-									: TypographyVariants.HEADING_M
-							}
-							color={styles.titleColor}
-						>
-							{article.subtitle}
-						</Typography> */}
+		<View className={styles.articleView}>
+			{loading ? (
+				<CircularProgress
+					size="60px"
+					className={commonStyles.circularProgress}
+				/>
+			) : (
+				<div className={styles.content}>
+					<div className={styles.imageContainer}>
+						<img src={article.image.url} alt="ArticleImage" />
 					</div>
-					<div
-						className={styles.articleText}
-						dangerouslySetInnerHTML={{
-							__html: article.content.html,
-						}}
-					/>
+					<div className={styles.articleContent}>
+						<div className={styles.titleDescription}>
+							<Typography
+								variant={
+									isMobile
+										? TypographyVariants.HEADING_L
+										: TypographyVariants.HEADING_XL
+								}
+								color={styles.titleColor}
+							>
+								{article.title}
+							</Typography>
+						</div>
+						<div
+							className={styles.articleText}
+							dangerouslySetInnerHTML={{
+								__html: article.content.html,
+							}}
+						/>
+					</div>
 				</div>
-			</div>
+			)}
 		</View>
 	);
 };
