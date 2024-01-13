@@ -9,12 +9,18 @@
 .content {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(475px , 1fr));
-    grid-gap: 32px;
+    grid-template-columns: repeat(3, minmax(275px, 475px));
+    grid-gap: 36px;
 }
 
 @media screen and (max-width: 1024px) {
     .content {
-        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
     }
 }

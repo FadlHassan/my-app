@@ -54,6 +54,7 @@ export const getArticles2 = async () => {
                 articles {
                     title
                     slug
+                    datePosted
                     image {
                         url
                     }
@@ -84,9 +85,6 @@ export const getArticle2 = async (slug) => {
                     datePosted
                     image {
                         url
-                    }
-                    author {
-                        name
                     }
                     content {
                         html

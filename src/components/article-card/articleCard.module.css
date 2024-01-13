@@ -9,7 +9,7 @@
     border-radius: 20px;
     width: 100%;
     max-width: 475px;
-    max-height: 361px;
+    min-height: 350px;
 }
 
 .imageContainer {
@@ -19,7 +19,7 @@
 }
 
 .imageContainer img {
-    max-height: 200px;
+    max-height: 175px;
     width: auto;
 }
 
@@ -31,10 +31,22 @@
     width: 100%;
 }
 
-.titleColor {
+.title {
+    text-transform: capitalize;
+}
+
+.title, .date {
     color: var(--secondary);
 }
 
-.subtitleColor {
-    color: var(--secondary);
+@media screen and (max-width: 768px) {
+    .imageContainer img {
+        max-height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .articleCard {
+        min-height: 300px;
+    }
 }

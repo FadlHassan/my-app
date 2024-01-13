@@ -5,6 +5,10 @@ import TypographyVariants from 'data/typography_variants';
 import myImage from 'images/landing-page-girl.jpg';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
+import {
+	capitalizeFirstLetterOfEachWord,
+	formatShortDate,
+} from 'services/format.service';
 
 const ArticleCard = ({ article, imageUrl }) => {
 	const isMobile = useMediaQuery({ maxWidth: 480 });
@@ -18,12 +22,18 @@ const ArticleCard = ({ article, imageUrl }) => {
 				<Typography
 					variant={
 						isMobile
-							? TypographyVariants.HEADING_M
-							: TypographyVariants.HEADING_L
+							? TypographyVariants.HEADING_S
+							: TypographyVariants.HEADING_M
 					}
-					color={styles.titleColor}
+					className={styles.title}
 				>
-					{article.title}
+					{capitalizeFirstLetterOfEachWord(article.title)}
+				</Typography>
+				<Typography
+					className={styles.date}
+					variant={TypographyVariants.DESCRIPTION}
+				>
+					{formatShortDate(article.datePosted)}
 				</Typography>
 			</div>
 		</Link>

@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom';
 import { getArticle2 } from 'services/article.service';
 import { CircularProgress } from '@mui/material';
 import commonStyles from 'commonStyles.module.css';
-import { format } from 'date-fns';
+import { formatDate } from 'services/format.service';
 
 const ArticleView = () => {
 	const { slug } = useParams();
@@ -52,7 +52,7 @@ const ArticleView = () => {
 							<Typography
 								variant={TypographyVariants.DESCRIPTION}
 							>
-								{format(article.datePosted, 'MMMM dd, yyyy')}
+								{formatDate(article.datePosted)}
 							</Typography>
 						</div>
 						<div
