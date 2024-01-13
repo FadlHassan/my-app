@@ -81,8 +81,12 @@ export const getArticle2 = async (slug) => {
             query getArticle($slug: String!) {
                 article(where: {slug: $slug}) {
                     title
+                    datePosted
                     image {
                         url
+                    }
+                    author {
+                        name
                     }
                     content {
                         html
