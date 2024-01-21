@@ -35,6 +35,30 @@
 
 .title {
     text-align: center;
+    opacity: 0;
+    transform: translateX(-10%);
+    animation: fadeIn 1s ease 0.5s forwards;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    transform: scale(0.5);
+    animation: zoomfadeIn 0.5s ease-in 0.5s forwards;
+  }
+}
+
+@keyframes fadeIn {  
+  to {  
+      opacity: 1;
+      transform: translateX(0);  
+  }  
+}
+
+@keyframes zoomfadeIn {  
+  to {  
+      opacity: 1;  
+      transform: scale(1)
+  }  
 }
 
 .title::first-line {
