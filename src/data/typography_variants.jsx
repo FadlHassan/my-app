@@ -7,6 +7,7 @@ const TypographyVariants = {
 	CONTACT_HEADER: 'header',
 	EMAIL: 'email',
 	DESCRIPTION: 'description',
+	DESCRIPTION_H: 'description_h',
 	DESCRIPTION_S: 'description_s',
 	CONTENT: 'content',
 };

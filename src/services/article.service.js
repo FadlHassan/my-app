@@ -54,13 +54,13 @@ export const getArticles2 = async () => {
                 articles {
                     title
                     slug
+                    datePosted
                     image {
                         url
                     }
                 }
             }
         `;
-        console.log('Query:', query);
         const data = await graphQLClient.request(query);
         return data.articles;
     } catch (error) {
@@ -82,6 +82,7 @@ export const getArticle2 = async (slug) => {
             query getArticle($slug: String!) {
                 article(where: {slug: $slug}) {
                     title
+                    datePosted
                     image {
                         url
                     }

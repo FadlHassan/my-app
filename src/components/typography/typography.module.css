@@ -42,7 +42,13 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 60px;
+}
 
+.description_h {
+    font-size: 24px;
+    font-family: "Poppins";
+    font-weight: 400;
+    line-height: normal;
 }
 
 .description {
