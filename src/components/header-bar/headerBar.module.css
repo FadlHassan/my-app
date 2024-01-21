@@ -16,8 +16,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(200px);
     opacity: 0;
+    background: var(--secondary);
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0s linear 0.3s;
     z-index: 9;

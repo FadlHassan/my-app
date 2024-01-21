@@ -7,20 +7,20 @@ import { useMediaQuery } from 'react-responsive';
 import View from 'components/views/view/View';
 
 const LandingView = ({ style }) => {
-	const isDesktopOrLarger = useMediaQuery({ minWidth: 1024 });
+	const maxScreenWidthForImage = useMediaQuery({ minWidth: 1178 });
 
 	return (
 		<View className={styles.landingView}>
-			{isDesktopOrLarger ? (
-				<div className={styles.content} style={style}>
-					<Typography
-						className={styles.title}
-						id="landingPageTitle"
-						variant={TypographyVariants.HEADING_L}
-						color={styles.titleColor}
-					>
-						Welcome, my name is <br /> Fadl Hassan <br />
-					</Typography>
+			<div className={styles.content} style={style}>
+				<Typography
+					className={styles.title}
+					id="landingPageTitle"
+					variant={TypographyVariants.HEADING_L}
+					color={styles.titleColor}
+				>
+					Welcome, my name is <br /> Fadl Hassan <br />
+				</Typography>
+				{maxScreenWidthForImage && (
 					<div className={styles.imagePopup}>
 						<img
 							src={landingPageImage}
@@ -28,19 +28,8 @@ const LandingView = ({ style }) => {
 							className={styles.img}
 						/>
 					</div>
-				</div>
-			) : (
-				<div className={styles.mobileContent}>
-					<Typography
-						className={styles.title}
-						id="landingPageTitle"
-						variant={TypographyVariants.HEADING_L}
-						color={styles.titleColor}
-					>
-						{'Welcome, my name is\nFadl Hassan'}
-					</Typography>
-				</div>
-			)}
+				)}
+			</div>
 		</View>
 	);
 };
