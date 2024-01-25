@@ -1,7 +1,19 @@
 :root {
+  /* colors */
   --primary: #000	;
   --secondary: #fff;
   --background: radial-gradient( circle at 15% 27.9%,  #226dc891 12.9%, rgba(133, 76, 86, 0.44) 91.2% );
+
+  /* font */
+  --font-family: 'Poppins', sans-serif;
+  
+  /* font-size */
+  --font-xxl: 2rem;
+  --font-xl: 1.8rem;
+  --font-l: 1.6rem;
+  --font-md: 1.4rem;
+  --font-sm: 1.2rem;
+  --font-xs: 1rem;
 }
 
 #root {

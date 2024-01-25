@@ -15,7 +15,7 @@ const LandingView = ({ style }) => {
 				<Typography
 					className={styles.title}
 					id="landingPageTitle"
-					variant={TypographyVariants.HEADING_L}
+					variant={TypographyVariants.HEADING_XL}
 					color={styles.titleColor}
 				>
 					Welcome, my name is <br /> Fadl Hassan <br />

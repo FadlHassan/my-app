@@ -14,11 +14,7 @@ const AboutView = () => {
 		<View>
 			<div className={styles.content}>
 				<Typography
-					variant={
-						isSmallToMediumScreen
-							? TypographyVariants.DESCRIPTION
-							: TypographyVariants.DESCRIPTION_H
-					}
+					variant={TypographyVariants.DESCRIPTION}
 					className={styles.text}
 				>
 					Welcome to my website, my name is Fadl Praveesh Hassan.
