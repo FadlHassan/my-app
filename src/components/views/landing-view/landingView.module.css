@@ -16,9 +16,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @media screen and (max-width: 767px) {
-        width: 275px;
-    }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         width: 450px;
 
@@ -47,12 +44,10 @@
     text-align: center;
 }
 
-@media screen and (min-width: 1177px) {
-  .title {
-    opacity: 0;
-    transform: translateX(-10%);
-    animation: fadeIn 1s ease 0.5s forwards;
-  }
+.titleWord {
+  opacity: 0;
+  transform: translateX(-10%);
+  animation: fadeIn 1s ease forwards;
 }
 
 @keyframes fadeIn {  
@@ -62,15 +57,9 @@
   }  
 }
 
-.title::first-line {
-    text-align: left;
-}
-
-
 .titleColor {
     color: var(--primary);
 }
-
 
 .imagePopup {
     position: relative;
