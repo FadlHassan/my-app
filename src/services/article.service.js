@@ -43,7 +43,6 @@ export const loadAllImages = async () => {
 export const getArticles2 = async () => {
     try {
         const endpoint = process.env.REACT_APP_GRAPH_CMS_API_KEY;
-        console.log('Endpoint:', endpoint);
         const graphQLClient = new GraphQLClient(endpoint,{
             headers: {
                 authorization: `Bearer ${process.env.REACT_APP_GRAPH_CMS_AUTH_TOKEN}`,
@@ -72,7 +71,6 @@ export const getArticles2 = async () => {
 export const getArticle2 = async (slug) => {
     try {
         const endpoint = process.env.REACT_APP_GRAPH_CMS_API_KEY;
-        console.log('Endpoint:', endpoint);
         const graphQLClient = new GraphQLClient(endpoint,{
             headers: {
                 authorization: `Bearer ${process.env.REACT_APP_GRAPH_CMS_AUTH_TOKEN}`,
