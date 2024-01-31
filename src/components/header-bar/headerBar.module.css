@@ -20,12 +20,12 @@
     .headerContainer::after {
         content: '';
         position: absolute;
+        margin: auto;
         bottom: 0;
-        left: 0;
-        width: 0;
-        top: 96px;
+        left: 20px;
+        right: 20px;
+        top: 112px;
         height: 3px;
-        width: 100%;
         background: var(--primary);
     }
     
