@@ -8,6 +8,20 @@ import View from 'components/views/view/View';
 
 const LandingView = ({ style }) => {
 	const maxScreenWidthForImage = useMediaQuery({ minWidth: 1178 });
+	const titleWords = ['Welcome, ', 'my ', 'name ', 'is ', 'Fadl ', 'Hassan '];
+	const title = titleWords.map((word, index) => {
+		const startingAnimationDelay = 0.7;
+		return (
+			<span
+				style={{
+					animationDelay: `${index * 0.6 + startingAnimationDelay}s`,
+				}}
+				className={styles.titleWord}
+			>
+				{word}
+			</span>
+		);
+	});
 
 	return (
 		<View className={styles.landingView}>
@@ -15,10 +29,10 @@ const LandingView = ({ style }) => {
 				<Typography
 					className={styles.title}
 					id="landingPageTitle"
-					variant={TypographyVariants.HEADING_L}
+					variant={TypographyVariants.HEADING_XL}
 					color={styles.titleColor}
 				>
-					Welcome, my name is <br /> Fadl Hassan <br />
+					{title}
 				</Typography>
 				{maxScreenWidthForImage && (
 					<div className={styles.imagePopup}>

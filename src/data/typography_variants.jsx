@@ -4,12 +4,7 @@ const TypographyVariants = {
 	HEADING_M: 'h3',
 	HEADING_S: 'h4',
 	HEADING_XS: 'h5',
-	CONTACT_HEADER: 'header',
-	EMAIL: 'email',
-	DESCRIPTION: 'description',
-	DESCRIPTION_H: 'description_h',
-	DESCRIPTION_S: 'description_s',
-	CONTENT: 'content',
+	DESCRIPTION: 'p',
 };
 
 export default TypographyVariants;
