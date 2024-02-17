@@ -1,12 +1,11 @@
 .landingView {
     overflow-y: hidden;
-    padding: 40px 40px 0 40px !important;
-    height: calc(100vh - 103px) !important;
 }
 
 .content {
     display: flex;
     justify-content: space-between;
+    gap: 64px;
 }
 
 @media screen and (max-width: 1176px) {
@@ -48,6 +47,7 @@
   opacity: 0;
   transform: translateX(-10%);
   animation: fadeIn 1s ease forwards;
+  z-index: 0;
 }
 
 @keyframes fadeIn {  
@@ -85,4 +85,5 @@
 
 .img {
   height: 100%;
+  z-index: 0;
 }

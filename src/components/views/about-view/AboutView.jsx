@@ -86,6 +86,9 @@ const AboutView = () => {
 				>
 					Fitness
 				</Typography>
+				<div className={styles.imageContainer}>
+					<img src={fitnessSectionImage} alt="FitnessImage" />
+				</div>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
 					className={styles.text}
@@ -97,9 +100,6 @@ const AboutView = () => {
 					considering I often used to order Burger King after coming
 					back from school.
 				</Typography>
-				<div className={styles.imageContainer}>
-					<img src={fitnessSectionImage} alt="FitnessImage" />
-				</div>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
 					className={styles.text}

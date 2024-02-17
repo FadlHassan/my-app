@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { useMediaQuery } from 'react-responsive';
 import { useNavigate } from 'react-router-dom';
-import Typography from 'components/typography/Typography';
-import TypographyVariants from 'data/typography_variants';
 import styles from 'components/header-bar/headerBar.module.css';
-import LinkedInIcon from 'icons/LinkedInIcon';
-import InstagramIcon from 'icons/InstagramIcon';
-import GithubIcon from 'icons/GithubIcon';
+import NavLink from 'components/nav-link/NavLink';
+import ContactSection from 'components/contact-section/ContactSection';
 
 function HeaderBar() {
 	const isTabletOrLargerDevice = useMediaQuery({ minWidth: 768 });
@@ -43,42 +39,21 @@ function HeaderBar() {
 
 	const linksLg = (
 		<div className={styles.headerContainer}>
-			<ul className={styles.headerBar}>
-				<li>
-					<NavLink className={styles.navLink} to="/">
-						<Typography variant={TypographyVariants.HEADING_L}>
-							Home
-						</Typography>
-					</NavLink>
-				</li>
-				<li>
-					<NavLink className={styles.navLink} to="/blog">
-						<Typography variant={TypographyVariants.HEADING_L}>
-							Blog
-						</Typography>
-					</NavLink>
-				</li>
-				<li>
-					<NavLink className={styles.navLink} to="/about">
-						<Typography variant={TypographyVariants.HEADING_L}>
-							About
-						</Typography>
-					</NavLink>
-				</li>
-			</ul>
-			<div className={styles.contactAndIcons}>
-				<a
-					className={styles.contact}
-					href="mailto:fadlpraveeshhassan@gmail.com"
-				>
-					Contact
-				</a>
-				<div className={styles.iconList}>
-					<LinkedInIcon />
-					<InstagramIcon />
-					<GithubIcon />
-				</div>
+			<div className={styles.topRow}>
+				<ul className={styles.navigation}>
+					<li>
+						<NavLink title="Home" link="/" />
+					</li>
+					<li>
+						<NavLink title="Blog" link="/blog" />
+					</li>
+					<li>
+						<NavLink title="About" link="/about" />
+					</li>
+				</ul>
+				<ContactSection />
 			</div>
+			<div className={styles.divider} />
 		</div>
 	);
 
@@ -89,59 +64,36 @@ function HeaderBar() {
 			<div className={styles.headerContainer}>
 				<ul>
 					<li>
-						<a
-							className={styles.navLink}
+						<NavLink
+							title="Home"
 							onClick={() => handleNavigate('home')}
-						>
-							<Typography variant={TypographyVariants.HEADING_L}>
-								Home
-							</Typography>
-						</a>
+						/>
 					</li>
 					<li>
-						<a
-							className={styles.navLink}
+						<NavLink
+							title="Blog"
 							onClick={() => handleNavigate('blog')}
-						>
-							<Typography variant={TypographyVariants.HEADING_L}>
-								Blog
-							</Typography>
-						</a>
+						/>
 					</li>
 					<li>
-						<a
-							className={styles.navLink}
+						<NavLink
+							title="About"
 							onClick={() => handleNavigate('about')}
-						>
-							<Typography variant={TypographyVariants.HEADING_L}>
-								About
-							</Typography>
-						</a>
+						/>
 					</li>
 				</ul>
-				<div className={styles.contactAndIcons}>
-					<a
-						className={styles.contact}
-						href="mailto:fadlpraveeshhassan@gmail.com"
-					>
-						Contact
-					</a>
-					<div className={styles.iconList}>
-						<LinkedInIcon />
-						<InstagramIcon />
-						<GithubIcon />
-					</div>
-				</div>
+				<ContactSection />
 			</div>
 		</div>
 	);
 
 	return isTabletOrLargerDevice ? (
-		<>{linksLg}</>
+		linksLg
 	) : (
 		<>
 			<div className={styles.hamburger}>
 				<Hamburger
+					className={styles.hamburger}
 					toggled={isOverlayOpen}
 					toggle={handleToggleOverlay}
 				/>
