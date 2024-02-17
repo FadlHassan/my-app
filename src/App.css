@@ -3,6 +3,7 @@
   --primary: #000	;
   --secondary: #fff;
   --background: radial-gradient( circle at 15% 27.9%,  #226dc891 12.9%, rgba(133, 76, 86, 0.44) 91.2% );
+  --link: #1825df;
 
   /* font */
   --font-family: 'Poppins', sans-serif;
