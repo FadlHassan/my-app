@@ -1,0 +1,9 @@
+.navLink {
+    display: block;
+    transition: transform 0.3s ease;
+    color: var(--primary);
+}
+
+.navLink:hover {
+    transform: scale(1.1);
+}
