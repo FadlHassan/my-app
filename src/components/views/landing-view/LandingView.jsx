@@ -5,8 +5,10 @@ import styles from 'components/views/landing-view/landingView.module.css';
 import landingPageImage from 'images/landing-page-avatar.png';
 import { useMediaQuery } from 'react-responsive';
 import View from 'components/views/view/View';
+import usePageTitle from 'hooks/title';
 
 const LandingView = ({ style }) => {
+	usePageTitle('Home');
 	const maxScreenWidthForImage = useMediaQuery({ minWidth: 1178 });
 	const titleWords = ['Welcome, ', 'my ', 'name ', 'is ', 'Fadl ', 'Hassan '];
 	const title = titleWords.map((word, index) => {

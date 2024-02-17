@@ -8,11 +8,17 @@ import { useParams } from 'react-router-dom';
 import { getArticle2 } from 'services/article.service';
 import { CircularProgress } from '@mui/material';
 import commonStyles from 'commonStyles.module.css';
-import { formatDate } from 'services/format.service';
+import {
+	capitalizeFirstLetterOfEachWord,
+	formatDate,
+} from 'services/format.service';
+import usePageTitle from 'hooks/title';
 
 const ArticleView = () => {
 	const { slug } = useParams();
 	const [article, setArticle] = useState(null);
+	usePageTitle(capitalizeFirstLetterOfEachWord(article?.title || 'Article'));
+
 	const [loading, setLoading] = useState(true);
 	const isMobile = useMediaQuery({ maxWidth: 480 });
 

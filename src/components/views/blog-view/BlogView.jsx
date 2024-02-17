@@ -5,8 +5,11 @@ import View from 'components/views/view/View';
 import { getArticles2 } from 'services/article.service';
 import { CircularProgress } from '@mui/material';
 import commonStyles from 'commonStyles.module.css';
+import usePageTitle from 'hooks/title';
 
 const BlogView = () => {
+	usePageTitle('Blog');
+
 	const [articles, setArticles] = useState(null);
 	const [loading, setLoading] = useState(true);
 

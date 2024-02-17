@@ -7,8 +7,11 @@ import backgroundSectionImage from 'images/AboutViewImage1.jpg';
 import readSectionImage from 'images/AboutViewImage2.jpg';
 import fitnessSectionImage from 'images/AboutViewImage3.jpg';
 import philosophySectionImage from 'images/AboutViewImage4.jpg';
+import usePageTitle from 'hooks/title';
 
 const AboutView = () => {
+	usePageTitle('About');
+
 	const backgroundSection = (
 		<div className={styles.section}>
 			<div className={styles.textContainer}>
