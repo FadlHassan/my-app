@@ -202,9 +202,7 @@ const AboutView = () => {
 					That’s a little bit about me. I’m a software engineer, who
 					loves to read, listen and write, and also loves to keep fit.
 					I’m always looking for new opportunities and challenges, and
-					I’m always open to new ideas and perspectives. If you have
-					any questions, or if you just want to say hi, feel free to
-					email me at{' '}
+					I’m always open to new ideas and perspectives.
 				</Typography>
 			</div>
 		</div>
