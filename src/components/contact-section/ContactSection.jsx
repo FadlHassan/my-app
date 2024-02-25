@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from 'components/contact-section/contactSection.module.css';
-import LinkedInIcon from 'icons/LinkedInIcon';
-import InstagramIcon from 'icons/InstagramIcon';
-import GithubIcon from 'icons/GithubIcon';
+import IconList from 'components/icon-list/IconList';
 
 const ContactSection = () => {
 	return (
@@ -13,11 +11,7 @@ const ContactSection = () => {
 			>
 				Contact
 			</a>
-			<div className={styles.iconList}>
-				<LinkedInIcon />
-				<InstagramIcon />
-				<GithubIcon />
-			</div>
+			<IconList />
 		</div>
 	);
 };

@@ -16,10 +16,10 @@ function getComponent(variant) {
   }
 }
 
-const Typography = ({ className, variant, color, children }) => {
+const Typography = ({ className, variant, color, bold = false, children }) => {
   const Component = getComponent(variant);
   return (
-    <Component className={`${className} ${styles[variant]} ${color}`}>
+    <Component className={`${className} ${styles[variant]} ${color} ${bold && styles.bold}`}>
         {children}
     </Component>
   );

@@ -4,13 +4,16 @@
   --secondary: #fff;
   --background: radial-gradient( circle at 15% 27.9%,  #226dc891 12.9%, rgba(133, 76, 86, 0.44) 91.2% );
   --link: #1825df;
+  --tertiary: #817777;
   --header-height: 124px;
   --header-padding: 40px 40px 20px 40px;
+  --footer-padding: 20px;
 
   /* font */
   --font-family: 'Poppins', sans-serif;
   
   /* font-size */
+  --font-main-title: 3.6rem;
   --font-xxl: 2rem;
   --font-xl: 1.8rem;
   --font-l: 1.6rem;

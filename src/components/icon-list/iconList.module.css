@@ -1,0 +1,24 @@
+
+.iconList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 16px;
+}
+
+.iconList svg {
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s ease;
+}
+
+.iconList svg path {
+    fill: var(--primary);
+}
+
+.iconList svg:hover path {
+    fill: #555;
+}
