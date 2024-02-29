@@ -3,34 +3,37 @@ import styles from 'components/views/about-view/aboutView.module.css';
 import Typography from 'components/typography/Typography';
 import TypographyVariants from 'data/typography_variants';
 import View from 'components/views/view/View';
-import backgroundSectionImage from 'images/AboutViewImage1.jpg';
-import readSectionImage from 'images/AboutViewImage2.jpg';
-import fitnessSectionImage from 'images/AboutViewImage3.jpg';
-import philosophySectionImage from 'images/AboutViewImage4.jpg';
+import backgroundSectionImage from 'images/background.jpg';
+import readSectionImage from 'images/read.jpg';
+import fitnessSectionImage from 'images/fitness.jpg';
+import philosophySectionImage from 'images/philosophy.jpg';
 import usePageTitle from 'hooks/title';
 
 const AboutView = () => {
 	usePageTitle('About');
-
 	const backgroundSection = (
 		<div className={styles.section}>
 			<div className={styles.textContainer}>
 				<Typography
 					variant={TypographyVariants.HEADING_L}
-					className={styles.text}
+					className={styles.sectionHeading}
 				>
 					Background
 				</Typography>
 				<div className={styles.imageContainer}>
-					<img src={backgroundSectionImage} alt="BackgroundImage" />
+					<img
+						src={backgroundSectionImage}
+						alt="BackgroundImage"
+						loading="lazy"
+					/>
 				</div>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
-					I’m a 23 year old Junior Software Engineer at American
-					Express, working primarily on the front-end, and based in
-					Brighton, UK.<br></br>
+					I’m a <b>23 year old Junior Software Engineer</b> at
+					American Express, working primarily on the front-end, and
+					based in Brighton, UK.<br></br>
 					<br></br>
 					I’m originally from the state of Kerala in India. I spent my
 					life growing up in Dubai, UAE, up until I finished my high
@@ -40,7 +43,11 @@ const AboutView = () => {
 				</Typography>
 			</div>
 			<div className={styles.desktopImageContainer}>
-				<img src={backgroundSectionImage} alt="BackgroundImage" />
+				<img
+					src={backgroundSectionImage}
+					alt="BackgroundImage"
+					loading="lazy"
+				/>
 			</div>
 		</div>
 	);
@@ -48,21 +55,25 @@ const AboutView = () => {
 	const readSection = (
 		<div className={styles.section}>
 			<div className={styles.desktopImageContainer}>
-				<img src={readSectionImage} alt="ReadImage" />
+				<img src={readSectionImage} alt="ReadImage" loading="lazy" />
 			</div>
 			<div className={styles.textContainer}>
 				<Typography
 					variant={TypographyVariants.HEADING_L}
-					className={styles.text}
+					className={styles.sectionHeading}
 				>
 					Reading, Listening and Writing
 				</Typography>
 				<div className={styles.imageContainer}>
-					<img src={readSectionImage} alt="ReadImage" />
+					<img
+						src={readSectionImage}
+						alt="ReadImage"
+						loading="lazy"
+					/>
 				</div>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
 					I was never a really into writing. In fact, I used to hate
 					everything about it and I didn’t think it was for me. But, I
@@ -85,16 +96,20 @@ const AboutView = () => {
 			<div className={styles.textContainer}>
 				<Typography
 					variant={TypographyVariants.HEADING_L}
-					className={styles.text}
+					className={styles.sectionHeading}
 				>
 					Fitness
 				</Typography>
 				<div className={styles.imageContainer}>
-					<img src={fitnessSectionImage} alt="FitnessImage" />
+					<img
+						src={fitnessSectionImage}
+						alt="FitnessImage"
+						loading="lazy"
+					/>
 				</div>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
 					During my high school years, there was a time where I used
 					to be a 15 year old kid, weighing a considerable 94k.
@@ -105,19 +120,23 @@ const AboutView = () => {
 				</Typography>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
 					One day, my mind just switched and I decided I’m going to
 					try and be better. From then on, I’ve been on this mission
-					to keep taking my fitness to the next level. Although there
-					were years where I made minimal progress, the last year has
-					been spectacular with immense muscular growth and fat loss.
-					For my 15 years old self, I’m remain committed to this
-					journey and will continue to keep going.
+					to keep <b>taking my fitness to the next level</b>. Although
+					there were years where I made minimal progress, the last
+					year has been spectacular with immense muscular growth and
+					fat loss. For my 15 years old self, I’m remain committed to
+					this journey and will continue to keep going.
 				</Typography>
 			</div>
 			<div className={styles.desktopImageContainer}>
-				<img src={fitnessSectionImage} alt="FitnessImage" />
+				<img
+					src={fitnessSectionImage}
+					alt="FitnessImage"
+					loading="lazy"
+				/>
 			</div>
 		</div>
 	);
@@ -125,21 +144,29 @@ const AboutView = () => {
 	const philosophySection = (
 		<div className={styles.section}>
 			<div className={styles.desktopImageContainer}>
-				<img src={philosophySectionImage} alt="PhilosophyImage" />
+				<img
+					src={philosophySectionImage}
+					alt="PhilosophyImage"
+					loading="lazy"
+				/>
 			</div>
 			<div className={styles.textContainer}>
 				<Typography
 					variant={TypographyVariants.HEADING_L}
-					className={styles.text}
+					className={styles.sectionHeading}
 				>
 					Philosophy
 				</Typography>
 				<div className={styles.imageContainer}>
-					<img src={philosophySectionImage} alt="PhilosophyImage" />
+					<img
+						src={philosophySectionImage}
+						alt="PhilosophyImage"
+						loading="lazy"
+					/>
 				</div>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
 					<em>“No amount of money ever bought a second of time”</em> -
 					Tony Stark
@@ -147,7 +174,7 @@ const AboutView = () => {
 
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
 					<em>
 						“Why do we fall sir? So we can learn to pick ourselves
@@ -157,7 +184,7 @@ const AboutView = () => {
 				</Typography>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
 					<em>
 						“Yesterday is history, tomorrow is a mystery, but today
@@ -167,7 +194,7 @@ const AboutView = () => {
 				</Typography>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
 					<em>
 						“Hard work is worthless for those that don't believe in
@@ -177,7 +204,7 @@ const AboutView = () => {
 				</Typography>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
 					<em>
 						"Happiness can be found, even in the darkest of times,
@@ -194,13 +221,13 @@ const AboutView = () => {
 			<div className={styles.textContainer}>
 				<Typography
 					variant={TypographyVariants.HEADING_L}
-					className={styles.text}
+					className={styles.sectionHeading}
 				>
 					Conclusion
 				</Typography>
 				<Typography
 					variant={TypographyVariants.DESCRIPTION}
-					className={styles.text}
+					className={styles.sectionContent}
 				>
 					That’s a little bit about me. I’m a software engineer, who
 					loves to read, listen and write, and also loves to keep fit.

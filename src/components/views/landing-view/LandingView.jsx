@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import Typography from 'components/typography/Typography';
 import TypographyVariants from 'data/typography_variants';
 import styles from 'components/views/landing-view/landingView.module.css';
 import View from 'components/views/view/View';
 import usePageTitle from 'hooks/title';
-import profileImage from 'images/AboutViewImage1.jpg';
+import profileImage from 'images/profile.jpg';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 
