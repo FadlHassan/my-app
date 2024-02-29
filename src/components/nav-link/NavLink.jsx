@@ -7,7 +7,6 @@ import { useMediaQuery } from 'react-responsive';
 
 const NavLink = ({ title, link, onClick }) => {
 	const isTabletOrLargerDevice = useMediaQuery({ minWidth: 768 });
-	console.log(title, onClick);
 
 	return isTabletOrLargerDevice ? (
 		<ReactNavLink className={styles.navLink} to={link}>
@@ -16,7 +15,13 @@ const NavLink = ({ title, link, onClick }) => {
 			</Typography>
 		</ReactNavLink>
 	) : (
-		<a className={styles.navLink} onClick={onClick}>
+		<a
+			className={styles.navLink}
+			onClick={(e) => {
+				e.preventDefault();
+				onClick();
+			}}
+		>
 			<Typography variant={TypographyVariants.HEADING_L}>
 				{title}
 			</Typography>
