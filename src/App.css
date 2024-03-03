@@ -15,12 +15,19 @@
   /* font-size */
   --font-main-title: 3.6rem;
   --font-main-title-sm: 2.6rem;
-  --font-xxl: 2rem;
-  --font-xl: 1.8rem;
-  --font-l: 1.6rem;
-  --font-md: 1.4rem;
-  --font-sm: 1.2rem;
-  --font-xs: 1rem;
+  --font-xxl: 2.2rem;
+  --font-xl: 2rem;
+  --font-l: 1.8rem;
+  --font-md: 1.6rem;
+  --font-sm: 1.4rem;
+  --font-xs: 1.2rem;
+
+  /** spacing */
+  --spacing-xxl: 40px;
+  --spacing-xl: 32px;
+  --spacing-lg: 24px;
+  --spacing-md: 16px;
+  --spacing-sm: 8px;
 }
 
 #root {

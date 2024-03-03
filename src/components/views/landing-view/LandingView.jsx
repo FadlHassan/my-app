@@ -6,36 +6,22 @@ import View from 'components/views/view/View';
 import usePageTitle from 'hooks/title';
 import profileImage from 'images/profile.jpg';
 import { useNavigate } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
 
 const LandingView = () => {
 	usePageTitle('Home');
 	const navigate = useNavigate();
-	const isTabletOrLargerDevice = useMediaQuery({ minWidth: 768 });
 
 	return (
 		<View className={styles.landingView}>
 			<div className={styles.content}>
 				<div className={styles.infoContainer}>
 					<div className={styles.title}>
-						<Typography
-							variant={
-								isTabletOrLargerDevice
-									? TypographyVariants.HEADING_XL
-									: TypographyVariants.HEADING_L
-							}
-						>
+						<Typography variant={TypographyVariants.HEADING_XL}>
 							Welcome, my name is <b>Fadl Hassan</b>
 						</Typography>
 					</div>
 					<div className={styles.subtitle}>
-						<Typography
-							variant={
-								isTabletOrLargerDevice
-									? TypographyVariants.HEADING_M
-									: TypographyVariants.HEADING_S
-							}
-						>
+						<Typography variant={TypographyVariants.HEADING_M}>
 							I live life to fullest, and am committed to making a
 							positive and lasting impact on the world.{' '}
 						</Typography>
@@ -43,21 +29,13 @@ const LandingView = () => {
 					<div className={styles.extraInfo}>
 						<Typography
 							className={styles.learnMore}
-							variant={
-								isTabletOrLargerDevice
-									? TypographyVariants.HEADING_M
-									: TypographyVariants.HEADING_S
-							}
+							variant={TypographyVariants.HEADING_M}
 						>
 							<a onClick={() => navigate('/about')}>Learn More</a>
 						</Typography>
 						<Typography
 							className={styles.contact}
-							variant={
-								isTabletOrLargerDevice
-									? TypographyVariants.HEADING_M
-									: TypographyVariants.HEADING_S
-							}
+							variant={TypographyVariants.HEADING_M}
 						>
 							<a href="mailto:fadlpraveeshhassan@gmail.com">
 								Contact

@@ -2,12 +2,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 16px;
-    margin-top: 32px;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing)
+}
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
+    .contactAndIcons {
         flex-direction: row;
-        gap: 24px;
+        gap: var(--spacing-lg);
         margin-top: 0;
     }
 }

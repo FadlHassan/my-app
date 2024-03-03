@@ -1,13 +1,13 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: var(--spacing-xl);
 }
 
 .section {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: var(--spacing-xl);
     align-items: center;
 }
 
@@ -27,6 +27,10 @@
     object-position: 50% 20%;
 }
 
+.section p {
+    text-align: left;
+}
+
 .section:last-child .textContainer {
     align-items: center;
 }
@@ -44,16 +48,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-}
-
-.sectionHeading {
-    font-size: var(--font-xl);
-}
-
-.sectionContent {
-    font-size: var(--font-sm);
-    text-align: left;
+    gap: var(--spacing-lg);
 }
 
 .divider {
@@ -82,14 +77,6 @@
 
     .imageContainer {
         display: none;
-    }
-
-    .sectionHeading {
-        font-size: var(--font-xxl);
-    }
-
-    .sectionContent {
-        font-size: var(--font-md);
     }
 
     .divider {

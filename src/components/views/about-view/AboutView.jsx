@@ -14,10 +14,7 @@ const AboutView = () => {
 	const backgroundSection = (
 		<div className={styles.section}>
 			<div className={styles.textContainer}>
-				<Typography
-					variant={TypographyVariants.HEADING_L}
-					className={styles.sectionHeading}
-				>
+				<Typography variant={TypographyVariants.HEADING_XL}>
 					Background
 				</Typography>
 				<div className={styles.imageContainer}>
@@ -27,10 +24,7 @@ const AboutView = () => {
 						loading="lazy"
 					/>
 				</div>
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					I’m a <b>23 year old Junior Software Engineer</b> at
 					American Express, working primarily on the front-end, and
 					based in Brighton, UK.<br></br>
@@ -58,10 +52,7 @@ const AboutView = () => {
 				<img src={readSectionImage} alt="ReadImage" loading="lazy" />
 			</div>
 			<div className={styles.textContainer}>
-				<Typography
-					variant={TypographyVariants.HEADING_L}
-					className={styles.sectionHeading}
-				>
+				<Typography variant={TypographyVariants.HEADING_XL}>
 					Reading, Listening and Writing
 				</Typography>
 				<div className={styles.imageContainer}>
@@ -71,10 +62,7 @@ const AboutView = () => {
 						loading="lazy"
 					/>
 				</div>
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					I was never a really into writing. In fact, I used to hate
 					everything about it and I didn’t think it was for me. But, I
 					did have a passion for understanding the world better and
@@ -94,10 +82,7 @@ const AboutView = () => {
 	const fitnessSection = (
 		<div className={styles.section}>
 			<div className={styles.textContainer}>
-				<Typography
-					variant={TypographyVariants.HEADING_L}
-					className={styles.sectionHeading}
-				>
+				<Typography variant={TypographyVariants.HEADING_XL}>
 					Fitness
 				</Typography>
 				<div className={styles.imageContainer}>
@@ -107,10 +92,7 @@ const AboutView = () => {
 						loading="lazy"
 					/>
 				</div>
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					During my high school years, there was a time where I used
 					to be a 15 year old kid, weighing a considerable 94k.
 					Shopping for clothes was a constant reminder of my struggle,
@@ -118,10 +100,7 @@ const AboutView = () => {
 					considering I often used to order Burger King after coming
 					back from school.
 				</Typography>
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					One day, my mind just switched and I decided I’m going to
 					try and be better. From then on, I’ve been on this mission
 					to keep <b>taking my fitness to the next level</b>. Although
@@ -151,10 +130,7 @@ const AboutView = () => {
 				/>
 			</div>
 			<div className={styles.textContainer}>
-				<Typography
-					variant={TypographyVariants.HEADING_L}
-					className={styles.sectionHeading}
-				>
+				<Typography variant={TypographyVariants.HEADING_XL}>
 					Philosophy
 				</Typography>
 				<div className={styles.imageContainer}>
@@ -164,48 +140,33 @@ const AboutView = () => {
 						loading="lazy"
 					/>
 				</div>
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					<em>“No amount of money ever bought a second of time”</em> -
 					Tony Stark
 				</Typography>
 
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					<em>
 						“Why do we fall sir? So we can learn to pick ourselves
 						up.”
 					</em>{' '}
 					- Alfred J. Pennyworth
 				</Typography>
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					<em>
 						“Yesterday is history, tomorrow is a mystery, but today
 						is a gift. That is why it is called the present.”
 					</em>{' '}
 					- Master Oogway
 				</Typography>
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					<em>
 						“Hard work is worthless for those that don't believe in
 						themselves.”
 					</em>{' '}
 					- Naruto Uzumaki
 				</Typography>
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					<em>
 						"Happiness can be found, even in the darkest of times,
 						if one only remembers to turn on the light."
@@ -219,16 +180,10 @@ const AboutView = () => {
 	const conclusionSection = (
 		<div className={styles.section}>
 			<div className={styles.textContainer}>
-				<Typography
-					variant={TypographyVariants.HEADING_L}
-					className={styles.sectionHeading}
-				>
+				<Typography variant={TypographyVariants.HEADING_XL}>
 					Conclusion
 				</Typography>
-				<Typography
-					variant={TypographyVariants.DESCRIPTION}
-					className={styles.sectionContent}
-				>
+				<Typography variant={TypographyVariants.DESCRIPTION}>
 					That’s a little bit about me. I’m a software engineer, who
 					loves to read, listen and write, and also loves to keep fit.
 					I’m always looking for new opportunities and challenges, and

@@ -37,7 +37,7 @@
     position: relative;
     display: flex;
     flex-wrap: column;
-    gap: 32px;
+    gap: var(--spacing-xl);
 }
 
 .overlay {

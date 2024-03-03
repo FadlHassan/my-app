@@ -16,7 +16,7 @@ const BlogView = () => {
 	useEffect(() => {
 		async function fetchMyData() {
 			const result = await getArticles2();
-			result.sort((a, b) => {
+			result?.sort((a, b) => {
 				return new Date(b.datePosted) - new Date(a.datePosted);
 			});
 			setArticles(result);
@@ -24,6 +24,8 @@ const BlogView = () => {
 		}
 		fetchMyData();
 	}, []);
+
+	console.log(articles);
 
 	return (
 		<View className={styles.blogView}>

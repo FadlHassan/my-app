@@ -8,7 +8,8 @@ export const capitalizeFirstLetterOfEachWord = (string) => {
 
 const monthDayYear = 'MMMM dd, yyyy';
 export const formatDate = (date) => {
-    return format(new Date(date), monthDayYear);
+    if (date) return format(new Date(date), monthDayYear);
+    return null;
 }
 
 const shortMonthDayYear = 'MMM dd, yyyy';
