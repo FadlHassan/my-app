@@ -25,8 +25,6 @@ const BlogView = () => {
 		fetchMyData();
 	}, []);
 
-	console.log(articles);
-
 	return (
 		<View className={styles.blogView}>
 			{loading ? (

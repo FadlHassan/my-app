@@ -5,12 +5,10 @@ import styles from 'components/views/landing-view/landingView.module.css';
 import View from 'components/views/view/View';
 import usePageTitle from 'hooks/title';
 import profileImage from 'images/profile.jpg';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const LandingView = () => {
 	usePageTitle('Home');
-	const navigate = useNavigate();
-
 	return (
 		<View className={styles.landingView}>
 			<div className={styles.content}>
@@ -31,7 +29,7 @@ const LandingView = () => {
 							className={styles.learnMore}
 							variant={TypographyVariants.HEADING_M}
 						>
-							<a onClick={() => navigate('/about')}>Learn More</a>
+							<Link to="/about">Learn More</Link>
 						</Typography>
 						<Typography
 							className={styles.contact}

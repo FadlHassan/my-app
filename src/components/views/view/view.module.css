@@ -3,7 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--header-height) 40px 40px 40px;
+    padding: 134px 40px 40px 40px;
     margin: auto;
-    max-width: 1600px; /** need to revise this soon */
+    max-width: 1600px;
+}
+
+@media (min-width: 768px) {
+  .view {
+    padding: 142px 40px 40px 40px;
+  }  
 }

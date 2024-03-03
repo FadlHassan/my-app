@@ -5,7 +5,6 @@
   --background: radial-gradient( circle at 15% 27.9%,  #226dc891 12.9%, rgba(133, 76, 86, 0.44) 91.2% );
   --link: #1825df;
   --tertiary: #817777;
-  --header-height: 124px;
   --header-padding: 40px 40px 20px 40px;
   --footer-padding: 20px;
 
@@ -17,9 +16,9 @@
   --font-main-title-sm: 2.6rem;
   --font-xxl: 2.2rem;
   --font-xl: 2rem;
-  --font-l: 1.8rem;
-  --font-md: 1.6rem;
-  --font-sm: 1.4rem;
+  --font-l: 1.9rem;
+  --font-md: 1.7rem;
+  --font-sm: 1.5rem;
   --font-xs: 1.2rem;
 
   /** spacing */
@@ -34,14 +33,6 @@
   text-align: center;
   height: 100vh;
   width: 100vw;
-}
-
-.scrollContainer {
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  height: 100%;
-  z-index: 12;
 }
 
 .App-logo {

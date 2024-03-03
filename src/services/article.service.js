@@ -90,7 +90,6 @@ export const getArticle2 = async (slug) => {
                 }
             }
         `;
-        console.log('Query:', query);
         const data = await graphQLClient.request(query, { slug });
         return data.article;
     } catch(error) {

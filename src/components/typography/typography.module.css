@@ -1,37 +1,37 @@
 @import url('https://fonts.cdnfonts.com/css/poppins'); 
 
 .h1 {
-    font-size: var(--font-xxl);
+    font-size: var(--font-xl);
     font-family: 'Poppins';
     font-weight: 400;
 }
 
 .h2 {
-    font-size: var(--font-xl);
-    font-family: "Poppins";
-    font-weight: 400;
-}
-
-.h3 {
     font-size: var(--font-l);
     font-family: "Poppins";
     font-weight: 400;
 }
 
-.h4 {
+.h3 {
     font-size: var(--font-md);
     font-family: "Poppins";
     font-weight: 400;
 }
 
-.h5 {
+.h4 {
     font-size: var(--font-sm);
     font-family: "Poppins";
     font-weight: 400;
 }
 
+.h5 {
+    font-size: var(--font-xs);
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
 .p {
-    font-size: var(--font-sm);
+    font-size: var(--font-xs);
     font-family: "Poppins";
     font-weight: 400;
 }
@@ -40,3 +40,24 @@
     font-weight: 700;
 }
 
+
+@media screen and (min-width: 768px){
+    .h1 {
+        font-size: var(--font-xxl);
+    }
+    .h2 {
+        font-size: var(--font-xl);
+    }
+    .h3 {
+        font-size: var(--font-l);
+    }
+    .h4 {
+        font-size: var(--font-md);
+    }
+    .h5 {
+        font-size: var(--font-sm);
+    }
+    .p {
+        font-size: var(--font-sm);
+    }
+}

@@ -44,7 +44,7 @@
 }
 
 .articleText h4 {
-    font-size: var(--font-md);
+    font-size: var(--font-sm);
     font-family: "Poppins";
     font-weight: 400;
     text-align: center;
@@ -52,7 +52,7 @@
 }
 
 .articleText p {
-    font-size: var(--font-sm);
+    font-size: var(--font-xs);
     font-family: "Poppins";
     line-height: normal;
     padding: var(--spacing-lg) 0;
@@ -61,4 +61,14 @@
 .articleText a {
     text-decoration: underline;
     color: var(--link);
+}
+
+@media (min-width: 768px) {
+    .articleText h4 {
+        font-size: var(--font-md);
+    }
+
+    .articleText p {
+        font-size: var(--font-sm);
+    }
 }

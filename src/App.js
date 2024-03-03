@@ -9,6 +9,7 @@ import ArticleView from 'components/views/article-view/ArticleView';
 import ContactView from 'components/views/contact-view/ContactView';
 import AboutView from 'components/views/about-view/AboutView';
 import HeaderBar from 'components/header-bar/HeaderBar';
+import { Scroll } from 'components/scroll/Scroll';
 
 function App() {
   if (process.env.NODE_ENV === 'development') {
@@ -26,7 +27,7 @@ function App() {
       <Routes>
         { isAdmin && <Route path="/admin" element={<AdminView />} /> }
         <Route path="/*" element={
-          <div className='scrollContainer'>
+          <Scroll>
             <HeaderBar />
             <Routes>
               <Route path="/" element={<LandingView />} />
@@ -35,8 +36,8 @@ function App() {
               <Route path="/contact" element={<ContactView />} />
               <Route path="/about" element={<AboutView />} />
             </Routes>
-          </div>
-        } />
+            </Scroll>        
+          } />
       </Routes>
     </Router>   
 );
